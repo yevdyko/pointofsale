@@ -27,14 +27,14 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
-        style: 'src/css/style.scss',
+        style: 'src/sass/style.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/css/**/*.scss',
+        style: 'src/sass/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -59,7 +59,7 @@ gulp.task('html:build', function () {
 });
 
 gulp.task("style", function() {
-  gulp.src("src/css/style.scss")
+  gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
