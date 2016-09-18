@@ -15,13 +15,24 @@
 
 @import "project/layout";
 @import "project/header";
-@import "project/footer";
-
-/* Components */
-
-@import "components/catalog";
-@import "components/order";
 
 /* Hamburgers */
 
 @import "hamburgers/hamburgers";
+
+/* Components */
+
+/* Catalog */
+
+@import "components/catalog";
+@import "components/catalog-item";
+
+/* Order */
+
+@import "components/order";
+@import "components/order-heading";
+@import "components/order-item";
+@import "components/order-total";
+@import "components/order-control";
+
+
