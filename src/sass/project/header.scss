@@ -11,6 +11,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   min-width: 320px;
   max-width: 1024px;
   margin: 0 auto;
@@ -18,8 +19,12 @@
   padding-right: 30px;
 }
 
+/* Username */
+
 .username {
   flex-grow: 1;
+
+  cursor: pointer;
 }
 
 .username__icon {
@@ -60,6 +65,8 @@
   }
 }
 
+/* Logo */
+
 .logo {
   position: absolute;
   left: 0;
@@ -71,7 +78,11 @@
 
 .logo__link {
   margin-top: 4px;
+
+  cursor: initial;
 }
+
+/* Menu */
 
 .menu {
   display: none;

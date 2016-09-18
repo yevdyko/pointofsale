@@ -1,0 +1,35 @@
+.order-heading {
+  margin: 0;
+  padding: 15px 10px;
+  padding-left: 15px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  background-color: $color-white;
+  border-radius: 0;
+  border-bottom: 1px solid #ddd;
+  border-color: #ddd;
+
+  cursor: pointer;
+}
+
+.order-heading__link {
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+
+  color: $color-black;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+
+    color: $color-black;
+  }
+}
