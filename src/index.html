@@ -14,11 +14,11 @@
 
     <header class="header">
       <div class="container">
-        <div class="username">
-          <div class="username__icon">
+        <div class="user">
+          <div class="user__icon">
             <span class="glyphicon glyphicon-user"></span>
           </div>
-          <a href="#" class="username__link">Алексей</a>
+          <a href="#" class="user__link">Алексей</a>
         </div>
         <div class="logo">
           <a href="#" class="logo__link">
@@ -45,7 +45,7 @@
     <div class="main-container">
 
       <div class="left-pane js-tab-container">
-        <div class="catalog_container row row--inline js-tab js-tab--open js-tab-item">
+        <div class="catalog-container row row--inline js-tab js-tab--open js-tab-item">
           <div class="row">
             <div class="col s-3">
               <div class="catalog-item">
@@ -156,7 +156,7 @@
                 <div class="catalog-item__image">
                   <img src="http://placehold.it/50x50" height="50px" width="50px" alt="">
                 </div>
-                <div class="catalog-item__title">Сука дорого дорого ведь</div>
+                <div class="catalog-item__title">Книга «Мои Полароиды»</div>
               </div>
             </div>
             <div class="col s-3">
@@ -172,10 +172,15 @@
                 <div class="catalog-item__image">
                   <img src="http://placehold.it/50x50" height="50px" width="50px" alt="">
                 </div>
-                <div class="catalog-item__title">Травяной чай чай чай длинный чай</div>
+                <div class="catalog-item__title">Травяной чай</div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="catalog-control">
+          <a href="#" class="js-tab-control active" data-tab="js-tab-product">Напитки</a>
+          <a href="#" class="js-tab-control" data-tab="js-tab-product">Еда</a>
+          <a href="#" class="js-tab-control" data-tab="js-tab-product">Галерея</a>
         </div>
       </div>
 
@@ -205,13 +210,13 @@
               <span class="glyphicon glyphicon-remove-sign"></span>
             </li>
             <li class="order-item">
-              <div class="order-item__title">Травяной чай чай чай длинный чай</div>
+              <div class="order-item__title">Травяной чай</div>
               <div class="order-item__quantity">х 10</div>
               <div class="order-item__price">18,00</div>
               <span class="glyphicon glyphicon-remove-sign"></span>
             </li>
             <li class="order-item">
-              <div class="order-item__title">Сука дорого дорого ведь</div>
+              <div class="order-item__title">Книга «Мои Полароиды»</div>
               <div class="order-item__quantity">х 25</div>
               <div class="order-item__price">100,00</div>
               <span class="glyphicon glyphicon-remove-sign"></span>
@@ -233,11 +238,30 @@
         </div>
 
       </div>
-      <!-- main-container -->
     </div>
-  <!-- wrapper -->
   </div>
 
-  <script src="js/script.min.js"></script>
+  <div class="user-modal-wrapper">
+    <div class="user-modal">
+      <button class="btn-close"></button>
+      <ul class="user__list">
+        <li class="user__item">
+          <a href="#" class="btn btn-default">Выбрать</a>
+          <span class="user__name">Алексей</span>
+        </li>
+        <li class="user__item">
+          <a href="#" class="btn btn-default">Выбрать</a>
+          <span class="user__name">Александр</span>
+        </li>
+        <li class="user__item">
+          <a href="#" class="btn btn-default">Выбрать</a>
+          <span class="user__name">Влад</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -26,6 +26,7 @@
 
 @import "components/catalog";
 @import "components/catalog-item";
+@import "components/catalog-control";
 
 /* Order */
 
@@ -35,4 +36,6 @@
 @import "components/order-total";
 @import "components/order-control";
 
+/* Username Modal Window */
 
+@import "components/user-modal";
