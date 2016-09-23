@@ -241,9 +241,10 @@
     </div>
   </div>
 
-  <div class="user-modal-wrapper">
-    <div class="user-modal">
-      <button class="btn-close"></button>
+  <!-- Модальное окно «Выбрать пользователя» -->
+  <div class="modal-content-wrapper">
+    <div class="modal-content">
+      <button class="js-modal-close"></button>
       <ul class="user__list">
         <li class="user__item">
           <a href="#" class="btn btn-default">Выбрать</a>
@@ -258,6 +259,37 @@
           <span class="user__name">Влад</span>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <!-- Модальное окно «Оплатить» -->
+  <div class="modal-content-wrapper">
+    <div class="modal-content">
+      <button class="js-modal-close"></button>
+      <div class="checkout">
+        <h1 class="checkout__title">Общая сумма заказа:</h1>
+        <span class="checkout__total">132,00</span>
+      </div>
+      <div class="guest">
+        <h1 class="guest__title">Введите количество гостей:</h1>
+        <form action="#" method="POST">
+          <div class="guest__button">
+            <button class="btn btn-lg btn-default">1</button>
+          </div>
+          <div class="guest__button">
+            <button class="btn btn-lg btn-default">2</button>
+          </div>
+          <div class="guest__button">
+            <button class="btn btn-lg btn-default">3</button>
+          </div>
+          <div class="guest__button">
+            <button class="btn btn-lg btn-default">4</button>
+          </div>
+          <div class="guest__button">
+            <button class="btn btn-lg btn-default">5</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
