@@ -22,9 +22,11 @@
 /* Username */
 
 .user {
+  cursor: pointer;
+
   flex-grow: 1;
 
-  cursor: pointer;
+  z-index: 5;
 }
 
 .user__icon {
@@ -78,8 +80,6 @@
 
 .logo__link {
   margin-top: 4px;
-
-  cursor: initial;
 }
 
 /* Menu */
