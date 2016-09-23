@@ -18,6 +18,7 @@
     "gulp": "3.9.1",
     "gulp-imagemin": "^3.0.3",
     "gulp-minify-css": "^1.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
     "gulp-rigger": "^0.5.8",
@@ -27,12 +28,12 @@
     "gulp-watch": "^4.1.1",
     "hamburgers": "^0.5.0",
     "imagemin-pngquant": "^5.0.0",
-    "rimraf": "^2.3.1"
+    "rimraf": "^2.3.1",
+    "run-sequence": "^1.1.0"
   },
   "scripts": {
-    "test": "editorconfig-tools check *",
     "build": "gulp build",
-    "start": "gulp serve"
+    "start": "gulp server"
   },
   "engines": {
     "node": "5.11"
