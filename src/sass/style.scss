@@ -36,6 +36,9 @@
 @import "components/order-total";
 @import "components/order-control";
 
-/* Username Modal Window */
+/* Modal Windows */
 
-@import "components/user-modal";
+@import "components/modal-content";
+
+@import "components/modal-user";
+@import "components/modal-checkout";
