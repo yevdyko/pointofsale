@@ -16,7 +16,7 @@
 .modal-content-wrapper__show {
   display: block;
 
-  animation: bounce 0.6s;
+  animation: bounce 0.4s;
 }
 
 .modal-content {
@@ -34,7 +34,7 @@
 
   transform: translate(-50%, -50%);
   transform-origin: bottom right;
-  animation: show 0.6s;
+  animation: show 0.2s;
 }
 
 .js-modal-close {
@@ -80,9 +80,6 @@
 @keyframes bounce {
   0%   {
     transform: translateY(-2000px);
-  }
-  60%  {
-    transform: translateY(0px);
   }
   90%  {
     transform: translateY(-10px);
