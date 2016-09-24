@@ -16,7 +16,10 @@
 }
 
 .catalog-container {
-  height: 513px;
+  height: 504px;
+  padding: 0 25px;
+
+  overflow-y: auto;
 }
 
 
