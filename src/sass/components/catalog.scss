@@ -1,25 +1,9 @@
-.row {
-  margin: 0;
-  padding: 0;
-}
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
 
-.col {
-  padding-bottom: $paddings * 2;
-
-  &:nth-child(4n) {
-    padding-right: 0;
-  }
-
-  &:nth-child(4n+1) {
-    padding-left: 0;
-  }
-}
-
-.catalog-container {
   height: 504px;
   padding: 0 25px;
 
   overflow-y: auto;
 }
-
-

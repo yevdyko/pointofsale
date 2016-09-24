@@ -3,7 +3,6 @@
 .catalog-item {
   position: relative;
 
-  display: inline-block;
   width: 100%;
   height: 120px;
 
@@ -17,8 +16,23 @@
   border-bottom-width: 3px;
 
   cursor: pointer;
+
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.catalog-item__wrapper {
+  width: 25%;
+  padding: 0 $paddings;
+  padding-bottom: $paddings * 2;
+
+  &:nth-child(4n) {
+    padding-right: 0;
+  }
+
+  &:nth-child(4n+1) {
+    padding-left: 0;
+  }
 }
 
 .catalog-item__image {
