@@ -2,6 +2,11 @@
 
 Interface for a point of sale system adapted for use with iPad.
 
+## Requirements
+
+- Bootstrap 3.3.7
+- jQuery 3.1.0 
+
 ## Prerequisites
 
 Install Node.js with [NVM](https://github.com/creationix/nvm):
@@ -43,3 +48,7 @@ Run the optimized project from the build folder with:
     $ npm start
 
 So now in your browser just go to [http://localhost:9000](http://localhost:9000)
+
+Deploy the optimized project using the command: 
+
+    $ npm run deploy
