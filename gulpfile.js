@@ -17,6 +17,7 @@ var gulp = require('gulp'),
     server = require("browser-sync"),
     runSequence = require('run-sequence').use(gulp),
     reload = server.reload;
+var ghPages = require('gulp-gh-pages');
 
 var path = {
   build: {
@@ -135,6 +136,12 @@ gulp.task('watch', function(){
 gulp.task('webserver', function() {
   server(config);
 });
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
 
 gulp.task('default', function(callback) {
   runSequence(['build', 'webserver', 'watch'],
