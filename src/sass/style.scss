@@ -3,9 +3,7 @@
 /* Base */
 
 @import "base/mixins/mixin";
-@import "base/__variables";
-@import "base/color";
-@import "base/typography";
+@import "base/base";
 
 /* Project*/
 
@@ -17,25 +15,4 @@
 @import "hamburgers/hamburgers";
 
 /* Components */
-
-/* Catalog */
-
-@import "components/catalog";
-@import "components/catalog-item";
-@import "components/catalog-control";
-
-/* Order */
-
-@import "components/order";
-@import "components/order-heading";
-@import "components/order-item";
-@import "components/order-total";
-@import "components/order-control";
-
-/* Modal Windows */
-
-@import "components/modal-content";
-
-@import "components/modal-user";
-@import "components/modal-guest";
-@import "components/modal-checkout";
+@import "components/components";

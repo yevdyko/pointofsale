@@ -3,6 +3,7 @@
 
   background: $color-white;
   border-bottom: 1px solid $color-steelgrey;
+  line-height: 30px;
 }
 
 .container {
@@ -36,9 +37,9 @@
   margin-right: 5px;
 
   line-height: 30px;
+  color: $color-icongrey;
   text-align: center;
 
-  color: $color-icongrey;
   background-color: $color-white;
   border: 2px solid $color-icongrey;
   border-radius: 15px;
@@ -49,21 +50,18 @@
 }
 
 .user__link {
-  cursor: pointer;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
-  text-decoration: none;
-
   color: $color-black;
+  text-decoration: none;
+  cursor: pointer;
 
   &:hover,
   &:focus,
   &:visited {
-    text-decoration: none;
-
     color: $color-black;
+    text-decoration: none;
   }
 }
 
@@ -86,4 +84,56 @@
 
 .menu {
   display: none;
+}
+
+/* Header Cancel */
+
+.header__cancel {
+  position: absolute;
+  top: 12px;
+
+  padding: 10px 20px;
+
+  color: $color-white;
+  cursor: pointer;
+
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Header Text */
+
+.header__text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.header__link {
+  margin-top: 3px;
+
+  font-size: 18px;
+  line-height: 1;
+  color: $color-black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $color-black;
+    text-decoration: none;
+  }
+}
+
+.glyphicon-chevron-left {
+  top: 0;
+
+  color: $color-black;
 }

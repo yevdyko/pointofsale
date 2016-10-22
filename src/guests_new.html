@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__cancel">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <a class="header__link" href="/">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1>Новый гость</h1>
+        </div>
+      </div>
+    </header>
+    <div class="form">
+      <form action="/echo" method="POST">
+        <div class="form__row form__row--image">
+          <div class="form__image">
+            <img src="img/default-avatar.jpg" width="152" height="152" alt="avatar">
+          </div>
+        </div>
+        <div class="form__row clearfix">
+          <div class="form__input">
+            <label for="name">Имя *</label>
+            <input class="form__field" type="text" id="name" required>
+            <span class="clear-button"></span>
+          </div>
+          <div class="form__input">
+            <label for="surname">Фамилия *</label>
+            <input class="form__field" type="text" id="surname" required>
+            <span class="clear-button"></span>
+          </div>
+        </div>
+        <div class="form__row clearfix">
+          <div class="form__input">
+            <label for="phone">Телефон</label>
+            <input class="form__field" type="tel" id="phone" placeholder="+375">
+            <span class="clear-button"></span>
+          </div>
+          <div class="form__input">
+            <label for="email">Электронная почта</label>
+            <input class="form__field" type="email" id="email">
+            <span class="clear-button"></span>
+          </div>
+        </div>
+        <div class="form__row clearfix">
+          <div class="form__input">
+            <label for="facebook">Facebook</label>
+            <input class="form__field" type="text" id="facebook">
+            <span class="clear-button"></span>
+          </div>
+          <div class="form__input">
+            <label for="instagram">Instagram</label>
+            <input class="form__field" type="text" id="instagram">
+            <span class="clear-button"></span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="form__row form__row--button">
+      <input class="btn btn--done" type="submit" value="Готово">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* Catalog */
+
+@import "catalog";
+@import "catalog-item";
+@import "catalog-control";
+
+/* Order */
+
+@import "order";
+@import "order-heading";
+@import "order-item";
+@import "order-total";
+@import "order-control";
+
+/* Guest */
+@import "form";
+
+/* Modal Windows */
+
+@import "modal-content";
+
+@import "modal-user";
+@import "modal-guest";
+@import "modal-checkout";
