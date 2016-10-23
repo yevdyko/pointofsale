@@ -1,3 +1,11 @@
+.btn {
+  outline: none;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
 .btn--done {
   display: block;
   width: 240px;
@@ -21,3 +29,23 @@
     border-color: #bdc3c7;
   }
 }
+
+.btn--more {
+  padding: 16px;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #4b5262;
+
+  background: #fff;
+  border: solid 2px #c3c3c3;
+  border-radius: 4px;
+
+  &:active {
+    color: #fff;
+
+    background-color: #bdc3c7;
+    border-color: #bdc3c7;
+  }
+}
+
