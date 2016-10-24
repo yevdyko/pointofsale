@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__cancel">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <a class="header__link" href="/">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1>Заказы</h1>
+        </div>
+      </div>
+    </header>
+    <section class="filter">
+      <div class="filter__item">
+        <h4 class="filter__title">Тип:</h4>
+        <div class="filter__type">
+          <select name="type">
+            <option value="1">Все</option>
+            <option value="2">С собой</option>
+            <option value="3">На месте</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter__item">
+        <h4 class="filter__title">Статус:</h4>
+        <div class="filter__type">
+          <select name="status">
+            <option value="1">Все</option>
+            <option value="2">Оплачен</option>
+            <option value="3">Не оплачен</option>
+            <option value="4">Отменен</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter__item">
+        <h4 class="filter__title">Комментарии:</h4>
+        <div class="filter__type">
+          <select name="comments">
+            <option value="1">Все</option>
+            <option value="2">Добавлены</option>
+            <option value="3">Не добавлены</option>
+          </select>
+        </div>
+      </div>
+
+    </section>
+    <div class="orders-list">
+      <div class="div">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <span class="order__id">
+                  ID заказа
+                </span>
+              </th>
+              <th>
+                <span class="order__type">
+                  Тип
+                </span>
+              </th>
+              <th>
+                <span class="order__status">
+                  Статус
+                </span>
+              </th>
+              <th>
+                <span class="order__total">
+                  Итого
+                </span>
+              </th>
+              <th>
+                <span class="order__date">
+                  Дата
+                </span>
+              </th>
+              <th>
+                <span class="order__comments">
+                  Комментарии
+                </span>
+              </th>
+              <th>
+                <span class="order__barista">
+                  Бариста
+                </span>
+              </th>
+              <th>
+                <span class="order__guest">
+                  Гость
+                </span>
+              </th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>012900150328</td>
+              <td>С собой</td>
+              <td>Оплачен</td>
+              <td>10,00 руб.</td>
+              <td>10/16/2016 20:34:21</td>
+              <td>Не добавлены</td>
+              <td>Влад</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012870175655</td>
+              <td>С собой</td>
+              <td>Не оплачен</td>
+              <td>2,00 руб.</td>
+              <td>10/14/2016 10:38:07</td>
+              <td>Добавлены</td>
+              <td>Влад</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#" class="open-order"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012850132615</td>
+              <td>На месте</td>
+              <td>Оплачен</td>
+              <td>5,50 руб.</td>
+              <td>10/14/2016 08:13:43</td>
+              <td>Добавлены</td>
+              <td>Влад</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012900150328</td>
+              <td>С собой</td>
+              <td>Оплачен</td>
+              <td>4,00 руб.</td>
+              <td>10/16/2016 20:34:21</td>
+              <td>Добавлены</td>
+              <td>Влад</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012870175655</td>
+              <td>На месте</td>
+              <td>Оплачен</td>
+              <td>10,00 руб.</td>
+              <td>10/14/2016 10:38:07</td>
+              <td>Добавлены</td>
+              <td>Влад</td>
+              <td>Ваня Крутик</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012850132615</td>
+              <td>На месте</td>
+              <td>Не оплачен</td>
+              <td>12,50 руб.</td>
+              <td>10/14/2016 08:13:43</td>
+              <td>Добавлены</td>
+              <td>Влад</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#" class="open-order"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012900150328</td>
+              <td>С собой</td>
+              <td>Оплачен</td>
+              <td>2,50 руб.</td>
+              <td>10/16/2016 20:34:21</td>
+              <td>Не добавлены</td>
+              <td>Александр</td>
+              <td>Слава Пушкинский</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012870175655</td>
+              <td>С собой</td>
+              <td>Оплачен</td>
+              <td>2,00 руб.</td>
+              <td>10/14/2016 10:38:07</td>
+              <td>Не добавлены</td>
+              <td>Влад</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012850132615</td>
+              <td>С собой</td>
+              <td>Оплачен</td>
+              <td>2,00 руб.</td>
+              <td>10/14/2016 08:13:43</td>
+              <td>Добавлены</td>
+              <td>Алексей</td>
+              <td>Петя Сидоров</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012900150328</td>
+              <td>На месте</td>
+              <td>Оплачен</td>
+              <td>3,00 руб.</td>
+              <td>10/16/2016 20:34:21</td>
+              <td>Не добавлены</td>
+              <td>Алексей</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012870175655</td>
+              <td>С собой</td>
+              <td>Оплачен</td>
+              <td>8,50 руб.</td>
+              <td>10/14/2016 10:38:07</td>
+              <td>Добавлены</td>
+              <td>Алексей</td>
+              <td>Случайный</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="more-results">
+      <input class="btn btn--more" type="submit" value="Показать больше">
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
