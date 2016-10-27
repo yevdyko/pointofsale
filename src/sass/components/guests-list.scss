@@ -36,8 +36,8 @@ table {
   border-collapse: collapse;
 }
 
-th,
-th {
+.guests-list th,
+.guests-list th {
   padding-right: 5px;
 
   &:last-child {
@@ -48,7 +48,7 @@ th {
 
 }
 
-th {
+.guests-list th {
   font-size: 14px;
   font-weight: normal;
   line-height: 0;
@@ -56,7 +56,7 @@ th {
   text-transform: uppercase;
 }
 
-th > span:last-child {
+.guests-list th > span:last-child {
   position: absolute;
   top: 10px;
 
@@ -68,7 +68,7 @@ th > span:last-child {
   background-color: transparent;
 }
 
-td {
+.guests-list td {
   height: 3em;
 
   text-align: left;
@@ -77,13 +77,13 @@ td {
   border-bottom: solid 1px #c2c7d0;
 }
 
-td.long-string {
+.guests-list td.long-string {
   max-width: 160px;
 
   word-break: break-all;
 }
 
-td:first-child span {
+.guests-list td:first-child span {
   display: inline-block;
   max-width: 300px;
   overflow: hidden;
