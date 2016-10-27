@@ -1,34 +1,3 @@
-.more-results {
-  position: absolute;
-  bottom: 0;
-
-  width: 100%;
-  height: 80px;
-
-  text-align: center;
-}
-
-.guests-list {
-  position: absolute;
-  top: 90px;
-  bottom: 100px;
-
-  width: 94%;
-  padding-top: 40px;
-
-  margin: 0 3%;
-
-  background-color: transparent;
-}
-
-.guests-list > div {
-  height: 507px;
-  overflow-y: auto;
-
-  border-top: solid 2px #bdc3c7;
-}
-
-
 table {
   width: 100%;
 
@@ -36,59 +5,82 @@ table {
   border-collapse: collapse;
 }
 
-.guests-list th,
-.guests-list th {
-  padding-right: 5px;
-
-  &:last-child {
-    padding-right: 0;
-
-    text-align: right;
-  }
-
-}
-
-.guests-list th {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 0;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.guests-list th > span:last-child {
-  position: absolute;
-  top: 10px;
-
+.guests-list th > span {
   display: block;
 
-  line-height: normal;
+  line-height: 3em;
   color: #3498db;
 
   background-color: transparent;
 }
 
-.guests-list td {
-  height: 3em;
+.guests-list th > span:last-child {
+  display: block;
 
-  text-align: left;
-  vertical-align: middle;
+  color: #3498db;
 
-  border-bottom: solid 1px #c2c7d0;
+  background-color: transparent;
 }
 
-.guests-list td.long-string {
-  max-width: 160px;
+.guests-list {
+  padding-top: 20px;
+  width: 94%;
+  margin: 0 3%;
 
-  word-break: break-all;
-}
+  background-color: transparent;
 
-.guests-list td:first-child span {
-  display: inline-block;
-  max-width: 300px;
-  overflow: hidden;
+  thead {
+    border-bottom: solid 2px #bdc3c7;
+  }
 
-  text-overflow: ellipsis;
+  th,
+  td {
+    padding-right: 5px;
+
+    &:last-child {
+      padding-right: 0;
+
+      text-align: right;
+    }
+  }
+
+  th {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 3em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  td {
+    height: 3em;
+
+    text-align: left;
+    vertical-align: middle;
+
+    border-bottom: solid 1px #c2c7d0;
+
+    span:last-child {
+      width: 14px;
+    }
+
+    &:first-child {
+
+      span {
+        display: inline-block;
+        max-width: 300px;
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  td.long-string {
+    max-width: 160px;
+
+    word-break: break-all;
+  }
 }
 
 .open-order {
@@ -101,3 +93,12 @@ table {
   background: url(../img/menu.png) center 2px no-repeat transparent;
 }
 
+.more-results {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 80px;
+
+  text-align: center;
+}
