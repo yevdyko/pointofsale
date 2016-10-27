@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__cancel">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <a class="header__link" href="/">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1>Детали гостя</h1>
+        </div>
+      </div>
+    </header>
+    <section class="guest__header">
+      <div class="guest__row">
+        <div class="guest__column">
+          <div class="guest__image">
+            <img src="img/default-avatar.jpg" width="152" height="152" alt="avatar">
+          </div>
+        </div>
+        <div class="guest__column">
+          <ul class="guest__list">
+            <li class="guest__item">
+              <div class="guest__name">
+                <span class="guest__label">Имя *:</span>
+                <span>Петя</span>
+              </div>
+              <div class="guest__surname">
+                <span class="guest__label">Фамилия *:</span>
+                <span>Сидоров</span>
+              </div>
+            </li>
+            <li class="guest__item">
+              <span class="guest__label1">Телефон:</span>
+              <span>+375 (29) 123-45-67</span>
+            </li>
+            <li class="guest__item">
+              <span class="guest__label1">Эл. почта:</span>
+              <span>sidorov@mail.com</span>
+            </li>
+            <li class="guest__item">
+              <span class="guest__label1">Facebook:</span>
+              <span>sidorov</span>
+            </li>
+            <li class="guest__item">
+              <span class="guest__label1">Instagram:</span>
+              <span>sidorov</span>
+            </li>
+          </ul>
+        </div>
+        <div class="guest__column">
+          <div class="guest__link">
+            <a href="#" class="edit-link">Редактировать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="order-history__wrapper">
+      <h2 class="order-history__title">История заказов</h2>
+    </div>
+    <div class="order-history">
+      <div class="div">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <span>
+                  Номер заказа
+                </span>
+              </th>
+              <th>
+                <span>
+                  Тип
+                </span>
+              </th>
+              <th>
+                <span>
+                  Статус
+                </span>
+              </th>
+              <th>
+                <span>
+                  Итого
+                </span>
+              </th>
+              <th>
+                <span>
+                  Дата
+                </span>
+              </th>
+              <th>
+                <span>
+                  Теги
+                </span>
+              </th>
+              <th>
+                <span>
+                  Комментарий
+                </span>
+              </th>
+              <th>
+                <span>
+                  Бариста
+                </span>
+              </th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>012900150328</td>
+              <td>С собой</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>10,00 руб.</td>
+              <td>10/16/2016 20:34:21</td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td class="long-string">Влад</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a class="open_order" href="/order_details.html">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012870175655</td>
+              <td>С собой</td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td>2,00 руб.</td>
+              <td>10/14/2016 10:38:07</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td class="long-string">Влад</td>
+              <td>
+                <a href="#" class="open-order"></a>
+              </td>
+              <td>
+                <a class="open_order" href="/order_details.html">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012850132615</td>
+              <td>На месте</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>5,50 руб.</td>
+              <td>10/14/2016 08:13:43</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td class="long-string">Влад</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a class="open_order" href="/order_details.html">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012900150328</td>
+              <td>С собой</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>4,00 руб.</td>
+              <td>10/16/2016 20:34:21</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td class="long-string">Влад</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a class="open_order" href="/order_details.html">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012870175655</td>
+              <td>На месте</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>10,00 руб.</td>
+              <td>10/14/2016 10:38:07</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td class="long-string">Влад</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a class="open_order" href="/order_details.html">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012850132615</td>
+              <td>На месте</td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td>12,50 руб.</td>
+              <td>10/14/2016 08:13:43</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td class="long-string">Влад</td>
+              <td>
+                <a href="#" class="open-order"></a>
+              </td>
+              <td>
+                <a class="open_order" href="/order_details.html">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>012900150328</td>
+              <td>С собой</td>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+              <td>2,50 руб.</td>
+              <td>10/16/2016 20:34:21</td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td>
+                <span class="glyphicon glyphicon-ban-circle"></span>
+              </td>
+              <td class="long-string">Александр</td>
+              <td>
+                <a href="#"></a>
+              </td>
+              <td>
+                <a class="open_order" href="/order_details.html">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="more-results">
+      <input class="btn btn--more" type="submit" value="Показать больше">
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
