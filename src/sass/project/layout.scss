@@ -9,7 +9,11 @@ body {
   height: 768px;
   margin: 0 auto;
 
-  background-color: $color-whitesmoke;
+  background-color: $color-snow;
+
+  &--white {
+    background-color: $color-white;
+  }
 }
 
 .main-container {

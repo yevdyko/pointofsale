@@ -4,48 +4,78 @@
   &:active {
     box-shadow: none;
   }
-}
 
-.btn--done {
-  display: block;
-  width: 240px;
-  height: 70px;
-  padding: 0;
-  margin: 0 auto;
+  &--more {
+    padding: 16px;
 
-  font-size: 24px;
-  color: #5d6575;
-  text-transform: uppercase;
-  cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    color: #4b5262;
 
-  background-color: #fff;
-  border: 2px solid #bdc3c7;
-  border-radius: 3px;
+    background: $color-white;
+    border: solid 2px #c3c3c3;
+    border-radius: 4px;
 
-  &:active {
-    color: #fff;
+    &:active {
+      color: $color-white;
 
-    background-color: #bdc3c7;
-    border-color: #bdc3c7;
+      background-color: #bdc3c7;
+      border-color: #bdc3c7;
+    }
+  }
+
+  &--edit {
+    padding: 8px 10px;
+
+    font-size: 16px;
+    line-height: 1.2;
+    color: #00aeeb;
+
+    background: 0 0;
+    border: 0;
+    border: 1px solid #00aeeb;
+    border-radius: 100px;
+
+    box-shadow: none;
+
+    &:focus,
+    &:visited,
+    &:active {
+      color: #00aeeb;
+    }
+
+    &:hover {
+      border: 1px solid #00aeeb;
+      background: #00aeeb;
+      color: $color-white;
+    }
+  }
+
+  &--done {
+    display: block;
+    width: 240px;
+    height: 70px;
+    padding: 0;
+    margin: 0 auto;
+
+    font-size: 24px;
+    color: #5d6575;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    background-color: $color-white;
+    border: 2px solid #bdc3c7;
+    border-radius: 3px;
+
+    &:active {
+      color: $color-white;
+
+      background-color: #bdc3c7;
+      border-color: #bdc3c7;
+    }
+  }
+
+  &--bggrey {
+    background-color: $color-whitesmoke;
   }
 }
-
-.btn--more {
-  padding: 16px;
-
-  font-size: 18px;
-  line-height: 24px;
-  color: #4b5262;
-
-  background: #fff;
-  border: solid 2px #c3c3c3;
-  border-radius: 4px;
-
-  &:active {
-    color: #fff;
-
-    background-color: #bdc3c7;
-    border-color: #bdc3c7;
-  }
-}
-

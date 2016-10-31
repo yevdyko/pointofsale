@@ -1,6 +1,6 @@
 .order-history {
-  width: 90%;
-  margin: 0 5%;
+  width: 92%;
+  margin: 0 4%;
 
   background-color: transparent;
 }
@@ -18,14 +18,13 @@
 
     text-align: right;
   }
-
 }
 
 .order-history th {
   font-size: 14px;
   font-weight: normal;
   line-height: 3em;
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
 }
 
