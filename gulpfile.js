@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     watch = require('gulp-watch'),
     postcss = require('gulp-postcss'),
-    prefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('autoprefixer'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
@@ -80,10 +80,7 @@ gulp.task('style:build', function () {
   gulp.src(path.src.style)
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(prefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
+    .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssmin())
     .pipe(sourcemaps.write())
