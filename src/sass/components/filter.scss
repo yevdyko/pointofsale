@@ -1,0 +1,57 @@
+.filter {
+  width: 92%;
+  padding-top: 20px;
+  margin: 0 4%;
+
+  font-size: 0;
+}
+
+.filter__item {
+  display: inline-block;
+  min-width: 95px;
+  margin-right: 60px;
+  margin-bottom: 15px;
+
+  font-size: 0;
+}
+
+.filter__title {
+  display: inline-block;
+  margin: 0;
+  margin-right: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.filter__type {
+  display: inline-block;
+
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+}
+
+.filter select {
+  height: 35px;
+  padding: 0 10px;
+  padding-right: 20px;
+
+  font-size: 13px;
+  color: $color-black;
+  cursor: pointer;
+
+  background-color: $color-whitesmoke;
+  background-image: url(../img/drop-down.png);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  border: 1px solid $color-steelgrey;
+  border-radius: 3px;
+  outline: none;
+
+  box-sizing: border-box;
+  appearance: none;
+}
