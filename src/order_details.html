@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper wrapper--white">
     <header class="header">
       <div class="container">
         <div class="header__cancel">
@@ -17,7 +17,7 @@
           <a class="header__link" href="/">Отмена</a>
         </div>
         <div class="header__text">
-          <h1>Детали заказа</h1>
+          <h1>Детали заказа – Статус: Оплачен</h1>
         </div>
       </div>
     </header>
@@ -35,7 +35,7 @@
             </li>
             <li class="order__item">
               <span>Телефон гостя:</span>
-              <span>+375 (29) 123-45-67</span>
+              <span>+375 29 123-45-67</span>
             </li>
             <li class="order__item">
               <span>Бариста:</span>
@@ -73,6 +73,58 @@
         </div>
       </div>
     </section>
+    <section class="order__content">
+      <table>
+        <thead>
+          <tr>
+            <th>Описание</th>
+            <th>Количество</th>
+            <th>Цена за ед.</th>
+            <th>Скидка</th>
+            <th>Сумма</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span>Эспрессо</span>
+            </td>
+            <td>1</td>
+            <td>2,00 руб.</td>
+            <td><span></span></td>
+            <td>
+              <span>2,00 руб.</span>
+            </td>
+          <tr>
+            <td>
+              <span>Американо</span>
+            </td>
+            <td>2</td>
+            <td>2,00 руб.</td>
+            <td></td>
+            <td>4,00 руб.</td>
+          <tr>
+            <td>
+              <span>Лимонный пирог</span>
+            </td>
+            <td>1</td>
+            <td>4,00 руб.</td>
+            <td></td>
+            <td>4,00 руб.</td>
+          <tr>
+            <td>
+              <span>Чай</span>
+            </td>
+            <td>2</td>
+            <td>1,50 руб.</td>
+            <td></td>
+            <td>3,00 руб.</td>
+        </tbody>
+      </table>
+    </section>
+    <div class="more-results">
+      <input class="btn btn--more btn--bggrey" type="submit" value="Распечатать">
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>

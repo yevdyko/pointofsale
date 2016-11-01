@@ -28,7 +28,7 @@
 .guest__row {
   margin-bottom: 0;
 
-  &::after {
+  &:after {
     display: table;
     clear: both;
 

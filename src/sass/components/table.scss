@@ -23,7 +23,7 @@ table {
     font-size: 14px;
     font-weight: normal;
     line-height: 3em;
-    color: $color-white;
+    color: #3498db;
     text-transform: uppercase;
   }
 
@@ -51,7 +51,6 @@ table {
     &:first-child {
 
       span {
-        display: inline-block;
         max-width: 300px;
         overflow: hidden;
 

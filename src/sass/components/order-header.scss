@@ -6,19 +6,10 @@
   background-color: transparent;
 }
 
-.order__content > div {
-  position: relative;
-
-  height: calc(100% - 2px);
-  overflow-y: auto;
-
-  border-top: 0;
-}
-
 .order__header {
   width: 80%;
   min-width: 800px;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 20px;
   margin: 0 auto;
   overflow: hidden;
@@ -27,9 +18,9 @@
 }
 
 .order__row {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
-  &::after {
+  &:after {
     display: table;
     clear: both;
 
@@ -38,7 +29,7 @@
 }
 
 .order__column {
-  position: relative;
+  display: block;
 
   float: left;
   width: 34%;
@@ -71,6 +62,10 @@
 
 .order__item {
   margin-bottom: 5px;
+
+  span {
+    line-height: 25px;
+  }
 
   &:last-child {
     margin-bottom: 0;
