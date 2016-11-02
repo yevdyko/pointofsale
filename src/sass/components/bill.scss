@@ -1,0 +1,148 @@
+.bill {
+  width: 45%;
+  padding: 20px 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+
+  margin-bottom: 30px;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.bill__header {
+  padding: 0;
+  padding-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.bill__guest {
+  line-height: 30px;
+}
+
+.bill__type {
+  line-height: 30px;
+}
+
+.bill__list {
+  height: 220px;
+  padding: 0;
+  padding-bottom: 63px;
+  margin-bottom: 77px;
+
+  list-style: none;
+
+  background-color: $color-white;
+  background-image: linear-gradient(to right, #e2e2e2 30%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: 10px 2px;
+}
+
+
+.bill__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  vertical-align: middle;
+
+  list-style: none;
+
+  &:first-child {
+    padding-top: 20px;
+  }
+}
+
+.bill__title {
+  flex-grow: 1;
+  width: 75%;
+  padding-right: 10px;
+}
+
+.bill__quantity {
+  width: 40px;
+
+  text-align: left;
+}
+
+.bill__price {
+  width: 75px;
+  padding-left: 10px;
+
+  font-weight: 600;
+  text-align: right;
+}
+
+.bill__subtotal {
+  width: 100%;
+
+  background-color: $color-white;
+  background-image: linear-gradient(to right, #e2e2e2 30%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+
+  .bill__item {
+    padding: 5px 0;
+  }
+
+  .bill__item:first-child {
+    padding-top: 15px;
+  }
+
+  .bill__item:last-child {
+    padding-bottom: 15px;
+  }
+}
+
+.bill__sub {
+  padding: 5px 0;
+}
+
+.bill__price--discount {
+  padding: 5px 0;
+}
+
+.bill__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 20px 0;
+  padding-bottom: 10px;
+
+  background-color: $color-white;
+  background-image: linear-gradient(to right, #e2e2e2 30%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+}
+
+.bill__text {
+  padding-bottom: 3px;
+
+  font-size: 20px;
+  line-height: 1;
+
+  color: $color-totalgrey;
+}
+
+.bill__price--total {
+  width: auto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
