@@ -1,26 +1,24 @@
 .bill {
-  width: 45%;
+  width: 80%;
   padding: 20px 30px;
   margin: 0 auto;
-  margin-top: 20px;
-
-
   margin-bottom: 30px;
 
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
 
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  background-color: $color-white;
+  border: 1px solid #ddd;
+  border-radius: 0;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .bill__header {
   padding: 0;
   padding-bottom: 10px;
 
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
   vertical-align: middle;
 }
 
@@ -33,7 +31,7 @@
 }
 
 .bill__list {
-  height: 220px;
+  height: 200px;
   padding: 0;
   padding-bottom: 63px;
   margin-bottom: 77px;
@@ -52,11 +50,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 10px 0;
+  padding: 5px 0;
 
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
   vertical-align: middle;
 
   list-style: none;
@@ -145,4 +140,41 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
+}
+
+.row {
+  padding-top: 20px;
+  margin: 0 10px;
+}
+
+.guest {
+  padding: 10px 0;
+  padding-bottom: 20px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  background-color: $color-white;
+  border: 1px solid #ddd;
+  border-radius: 0;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.guest__title {
+  padding: 10px 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.guest__button {
+  display: inline-block;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

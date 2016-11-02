@@ -4,6 +4,10 @@
   padding-bottom: 15px;
 
   text-align: center;
+
+  &--white {
+    background-color: $color-white;
+  }
 }
 
 .checkout__title {
@@ -22,26 +26,4 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
-}
-
-.guest {
-  text-align: center;
-}
-
-.guest__title {
-  margin-top: 0;
-  margin-bottom: 12px;
-
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.guest__button {
-  display: inline-block;
-  margin-right: 5px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }

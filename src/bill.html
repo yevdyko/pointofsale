@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__cancel">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <a class="header__link" href="/">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1>Счет</h1>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="bill">
+          <div class="bill__header">
+            <div class="bill__guest">
+              <span>Гость:</span>
+              <span>Петя Сидоров</span>
+            </div>
+            <div class="bill__type">
+              <span>Тип заказа:</span>
+              <span>На месте</span>
+            </div>
+          </div>
+          <ul class="bill__list">
+            <li class="bill__item">
+              <span class="bill__title">Эспрессо</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">2,00</span>
+            </li>
+            <li class="bill__item">
+              <span class="bill__title">Американо</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">2,00</span>
+            </li>
+            <li class="bill__item">
+              <span class="bill__title">Лимонный пирог</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">4,00</span>
+            </li>
+            <li class="bill__item">
+              <span class="bill__title">Книга «Мои Полароиды»</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">20,00</span>
+            </li>
+          </ul>
+          <div class="bill__subtotal">
+            <div class="bill__item">
+              <span class="bill__title">Итого:</span>
+              <span class="bill__price">28,00</span>
+            </div>
+            <div class="bill__item">
+              <span class="bill__title">Скидка:</span>
+              <span class="bill__price">0,00</span>
+            </div>
+          </div>
+          <div class="bill__total">
+            <span class="bill__text">К оплате:</span>
+            <span class="bill__price bill__price--total">28,00</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="guest-ammount">
+          <div class="guest">
+            <h1 class="guest__title">Введите количество гостей:</h1>
+            <form action="#" method="POST">
+              <div class="guest__button">
+                <button class="btn btn-xl btn-default">1</button>
+              </div>
+              <div class="guest__button">
+                <button class="btn btn-xl btn-default">2</button>
+              </div>
+              <div class="guest__button">
+                <button class="btn btn-xl btn-default">3</button>
+              </div>
+              <div class="guest__button">
+                <button class="btn btn-xl btn-default">4</button>
+              </div>
+              <div class="guest__button">
+                <button class="btn btn-xl btn-default">5</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="form__row form__row--button">
+      <input class="btn btn--done" type="submit" value="Готово">
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
