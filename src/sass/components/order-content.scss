@@ -16,19 +16,20 @@
   font-size: 0;
 }
 
+.order__tags {
+  padding: 10px 0;
+}
+
 .order__comments {
   display: block;
   width: 600px;
 }
 
-.order__tags {
-
-  span {
-    display: inline-block;
-    width: 120px;
-    font-size: 16px;
-    margin: 0;
-  }
+.tags__title {
+  display: inline-block;
+  width: 120px;
+  font-size: 16px;
+  margin: 0;
 }
 
 .order__comments {
@@ -36,7 +37,7 @@
 
   span {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   p {
@@ -53,7 +54,7 @@
   display: inline-block;
   padding: 5px 10px;
   margin: 0 0 10px 10px;
-  margin-left: 5px;
+  margin-bottom: 0;
 
   font-size: 14px;
   line-height: 1;
@@ -62,4 +63,8 @@
 
   background-color: #e0e0e0;
   border-radius: 4px;
+
+  &:first-child {
+    margin-left: 5px;
+  }
 }
