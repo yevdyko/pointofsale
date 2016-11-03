@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper wrapper--white">
+    <header class="header">
+      <div class="container">
+        <div class="header__cancel">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <a class="header__link" href="/">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1>Комментарий к заказу</h1>
+        </div>
+      </div>
+    </header>
+    <section class="order__header">
+      <div class="order__row">
+        <div class="col-xs-12">
+          <ul class="order__list">
+            <li class="order__item">
+              <span>Номер заказа:</span>
+              <span>012900150328</span>
+            </li>
+            <li class="order__item">
+              <span>Гость:</span>
+              <span>Случайный</span>
+            </li>
+            <li class="order__item">
+              <span>Тип заказа:</span>
+              <span>С собой</span>
+            </li>
+            <li class="order__item">
+              <span>Дата заказа:</span>
+              <span>10/16/2016 20:34:21</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <form class="order__form" action="#" method="POST">
+      <fieldset class="order__field">
+        <legend class="order__label">Добавить теги:</legend>
+        <textarea class="order__textarea" name="tags"></textarea>
+      </fieldset>
+      <fieldset class="order__field">
+        <legend class="order__label">Добавить комментарии:</legend>
+        <textarea class="order__textarea" name="comment"></textarea>
+      </fieldset>
+    </form>
+
+    <div class="form__row form__row--button">
+      <input class="btn btn--done btn--bggrey" type="submit" value="Готово">
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
