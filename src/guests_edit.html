@@ -21,55 +21,54 @@
         </div>
       </div>
     </header>
-    <div class="form">
-      <form action="/echo" method="POST">
+    <div class="form__wrapper">
+      <form class="form" action="/echo" method="post">
         <div class="form__row form__row--image">
           <div class="form__image">
             <img src="img/default-avatar.jpg" width="152" height="152" alt="avatar">
           </div>
         </div>
         <div class="form__row clearfix">
-          <div class="form__input">
-            <label for="name">Имя *</label>
+          <div class="form__group">
+            <label class="form__label" for="name">Имя *</label>
             <input class="form__field" type="text" id="name" value="Петя"required>
-            <span class="clear-button"></span>
+            <button class="clear-button" type="reset"></button>
           </div>
-          <div class="form__input">
-            <label for="surname">Фамилия *</label>
+          <div class="form__group">
+            <label class="form__label" for="surname">Фамилия *</label>
             <input class="form__field" type="text" id="surname" value="Сидоров"required>
-            <span class="clear-button"></span>
+            <button class="clear-button" type="reset"></button>
           </div>
         </div>
         <div class="form__row clearfix">
-          <div class="form__input">
-            <label for="phone">Телефон</label>
+          <div class="form__group">
+            <label class="form__label" for="phone">Телефон</label>
             <input class="form__field" type="tel" id="phone" placeholder="+375" value="+375 29 123-45-67">
-            <span class="clear-button"></span>
+            <button class="clear-button" type="reset"></button>
           </div>
-          <div class="form__input">
-            <label for="email">Электронная почта</label>
+          <div class="form__group">
+            <label class="form__label" for="email">Электронная почта</label>
             <input class="form__field" type="email" id="email" value="sidorov@example.com">
-            <span class="clear-button"></span>
+            <button class="clear-button" type="reset"></button>
           </div>
         </div>
         <div class="form__row clearfix">
-          <div class="form__input">
-            <label for="facebook">Facebook</label>
+          <div class="form__group">
+            <label class="form__label" for="facebook">Фейсбук</label>
             <input class="form__field" type="text" id="facebook" value="sidorov">
-            <span class="clear-button"></span>
+            <button class="clear-button" type="reset"></button>
           </div>
-          <div class="form__input">
-            <label for="instagram">Instagram</label>
+          <div class="form__group">
+            <label class="form__label" for="instagram">Инстаграм</label>
             <input class="form__field" type="text" id="instagram" value="sidorov">
-            <span class="clear-button"></span>
+            <button class="clear-button" type="reset"></button>
           </div>
         </div>
       </form>
     </div>
     <div class="form__row form__row--button">
-      <input class="btn btn--done btn--bggrey" type="submit" value="Готово">
+      <button class="button button--wide button--grey" type="submit">Готово</button>
     </div>
-  </div>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="js/script.min.js"></script>
 </body>
