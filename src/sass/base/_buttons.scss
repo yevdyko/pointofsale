@@ -121,6 +121,26 @@
     }
   }
 
+  &--more {
+    min-width: 200px;
+    padding: 21px;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: #4b5262;
+
+    background: $color-white;
+    border: solid 2px #c3c3c3;
+    border-radius: 4px;
+
+    &:active {
+      color: $color-white;
+
+      background-color: #bdc3c7;
+      border-color: #bdc3c7;
+    }
+  }
+
   &--grey {
     background-color: $color-whitesmoke;
   }

@@ -84,28 +84,30 @@
 }
 
 .guest__label {
-  color: #3498db;
+  color: $color-blue;
 }
 
 .guest__label1 {
   width: 80px;
 
-  color: #3498db;
+  color: $color-blue;
 }
 
 .edit-link {
   display: inline-block;
-  padding: 5px 20px;
-  padding-right: 0;
+  padding: 0;
 
-  color: #3498db;
+  line-height: 1.2;
+  color: $color-blue;
   text-decoration: none;
   cursor: pointer;
+
+  border-bottom: 1px solid rgba( $color-blue, 0.2 );
 
   &:hover,
   &:focus,
   &:visited {
-    color: #3498db;
+    color: $color-blue;
     text-decoration: none;
   }
 }
@@ -132,16 +134,4 @@
   margin: 0 auto;
   font-size: 20px;
   top: 3px;
-}
-
-.glyphicon-ban-circle {
-  color: #d3d3d3;
-}
-
-.glyphicon-ok {
-  color: #008329;
-}
-
-.glyphicon-chevron-right {
-  font-size: 14px;
 }

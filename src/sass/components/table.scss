@@ -5,7 +5,11 @@ table {
   border-collapse: collapse;
 
   thead {
-    border-bottom: solid 2px #bdc3c7;
+    border-bottom: solid 2px $color-headgrey;
+  }
+
+  tr {
+    cursor: pointer;
   }
 
   th,
@@ -21,9 +25,9 @@ table {
 
   th {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 3em;
-    color: #3498db;
+    color: $color-blue;
     text-transform: uppercase;
   }
 
@@ -31,7 +35,7 @@ table {
     display: block;
 
     line-height: 3em;
-    color: #3498db;
+    color: $color-blue;
 
     background-color: transparent;
   }
@@ -42,7 +46,7 @@ table {
     text-align: left;
     vertical-align: middle;
 
-    border-bottom: solid 1px #c2c7d0;
+    border-bottom: solid 1px $color-lightgrey;
 
     span:last-child {
       width: 14px;
