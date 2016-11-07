@@ -8,8 +8,7 @@
   }
 }
 
-.order__tags,
-.order__comments {
+.order__tags {
   display: block;
   float: left;
 
@@ -22,26 +21,36 @@
 
 .order__comments {
   display: block;
-  width: 600px;
+  float: left;
 }
 
-.tags__title {
+.tags__title,
+.comments__title {
   display: inline-block;
   width: 120px;
   font-size: 16px;
+  vertical-align: top;
   margin: 0;
 }
 
-.order__comments {
-  font-size: 16px;
+.order__link {
+  display: block;
+  float: right;
+  padding-top: 13px;
+}
 
-  span {
-    display: block;
-    margin-bottom: 10px;
-  }
+.order__comments {
+  font-size: 0;
 
   p {
+    display: inline-block;
+    width: calc(100% - 120px);
+    padding-left: 4px;
     margin-bottom: 0;
+
+    font-size: 16px;
+    word-wrap: break-word;
+    vertical-align: top;
   }
 }
 

@@ -7,7 +7,6 @@
 }
 
 .order__header {
-  width: 80%;
   min-width: 800px;
   padding-top: 25px;
   padding-bottom: 20px;
@@ -32,25 +31,9 @@
   display: block;
 
   float: left;
-  width: 34%;
+  width: 50%;
 
   vertical-align: top;
-
-  &:first-child {
-    width: 40%;
-  }
-
-  &:last-child {
-    width: 26%;
-
-    span:first-child {
-      width: 55%;
-    }
-
-    span + span {
-      float: right;
-    }
-  }
 }
 
 .order__list {
