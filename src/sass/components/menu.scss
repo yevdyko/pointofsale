@@ -1,0 +1,25 @@
+.nav-primary {
+  margin: 0;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+
+  li {
+    margin-bottom: 5px;
+
+    a {
+      display: block;
+      color: #fff;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255, 0.3);
+    }
+  }
+}
+
+.row {
+  width: 100%;
+  max-width: 80rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}

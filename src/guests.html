@@ -21,7 +21,49 @@
         </div>
       </div>
     </header>
-    <div class="guests-list">
+    <div class="table-wrapper">
+      <section class="filter">
+        <div class="filter__item">
+          <h4 class="filter__title">Телефон:</h4>
+          <div class="filter__type">
+            <select name="phone">
+              <option value="1">Все</option>
+              <option value="2">Добавлен</option>
+              <option value="3">Не добавлен</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__item">
+          <h4 class="filter__title">Эл. почта:</h4>
+          <div class="filter__type">
+            <select name="email">
+              <option value="1">Все</option>
+              <option value="2">Добавлен</option>
+              <option value="3">Не добавлен</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__item">
+          <h4 class="filter__title">Фейсбук:</h4>
+          <div class="filter__type">
+            <select name="facebook">
+              <option value="1">Все</option>
+              <option value="2">Добавлен</option>
+              <option value="3">Не добавлен</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__item">
+          <h4 class="filter__title">Инстаграм:</h4>
+          <div class="filter__type">
+            <select name="instagram">
+              <option value="1">Все</option>
+              <option value="2">Добавлен</option>
+              <option value="3">Не добавлен</option>
+            </select>
+          </div>
+        </div>
+      </section>
       <table>
         <thead>
           <tr>
@@ -45,14 +87,9 @@
                 Эл. почта
               </span>
             </th>
-            <th>
+            <th colspan="2">
               <span>
-                Фейсбук
-              </span>
-            </th>
-            <th>
-              <span>
-                Инстаграм
+                Соцсети
               </span>
             </th>
             <th>
@@ -296,32 +333,11 @@
               </a>
             </td>
           </tr>
-          <tr>
-            <td>012850132615</td>
-            <td class="long-string">Слава Пушкинский</td>
-            <td>+375 33 123-45-67</td>
-            <td class="long-string">slava.pushkin@email.com</td>
-            <td>
-              <span class="fa fa-facebook-square fa-xl status-not-added" aria-hidden="true"></span>
-            </td>
-            <td>
-              <span class="fa fa-instagram fa-xl status-not-added" aria-hidden="true"></span>
-            </td>
-            <td>10/14/2016 08:13:43</td>
-            <td>
-              <a href="#"></a>
-            </td>
-            <td>
-              <a href="#">
-                <span class="fa fa-chevron-right"></span>
-              </a>
-            </td>
-          </tr>
         </tbody>
       </table>
     </div>
     <div class="more-results">
-      <input class="btn btn--more btn--bggrey" type="submit" value="Показать больше">
+      <button class="button button--more button--grey" type="submit">Показать больше</button>
     </div>
   </div>
 
