@@ -14,21 +14,24 @@ body {
   background-color: $color-snow;
 
   &--white {
-    background-color: $color-white;
+    background-color: $white;
   }
 }
 
 .content-wrapper {
   width: 80%;
-  padding-top: 0;
-  margin: 0 10%;
+  margin: 0 auto;
 
   background-color: transparent;
+
+  &--comment {
+    width: 60%;
+  }
 }
 
 .table-wrapper {
   width: 92%;
-  margin: 0 4%;
+  margin: 0 auto;
 
   background-color: transparent;
 }

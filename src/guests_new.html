@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <div class="header__cancel">
-          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="fa fa-chevron-left" aria-hidden="true"></span>
           <a class="header__link" href="/">Отмена</a>
         </div>
         <div class="header__text">
@@ -21,55 +21,52 @@
         </div>
       </div>
     </header>
-    <div class="form__wrapper">
-      <form class="form" action="/echo" method="post">
-        <div class="form__row form__row--image">
-          <div class="form__image">
-            <img src="img/default-avatar.jpg" width="152" height="152" alt="avatar">
+    <div class="registration-form">
+      <form action="/echo" method="post">
+        <div class="registration-form__container">
+          <div class="registration-form__group">
+            <div class="registration-form__image">
+              <img src="img/default-avatar.jpg" width="152" height="152" alt="avatar">
+            </div>
           </div>
-        </div>
-        <div class="form__row clearfix">
-          <div class="form__group">
-            <label class="form__label" for="name">Имя *</label>
-            <input class="form__field" type="text" id="name" required>
-            <button class="clear-button" type="reset"></button>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="name">Имя *</label>
+            <input class="registration-form__field" type="text" id="name" required>
+            <button class="registration-form__button" type="reset"></button>
           </div>
-          <div class="form__group">
-            <label class="form__label" for="surname">Фамилия *</label>
-            <input class="form__field" type="text" id="surname" required>
-            <button class="clear-button" type="reset"></button>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="surname">Фамилия *</label>
+            <input class="registration-form__field" type="text" id="surname" required>
+            <button class="registration-form__button" type="reset"></button>
           </div>
-        </div>
-        <div class="form__row clearfix">
-          <div class="form__group">
-            <label class="form__label" for="phone">Телефон</label>
-            <input class="form__field" type="tel" id="phone" placeholder="+375">
-            <button class="clear-button" type="reset"></button>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="phone">Телефон</label>
+            <input class="registration-form__field" type="tel" id="phone" placeholder="+375">
+            <button class="registration-form__button" type="reset"></button>
           </div>
-          <div class="form__group">
-            <label class="form__label" for="email">Электронная почта</label>
-            <input class="form__field" type="email" id="email">
-            <button class="clear-button" type="reset"></button>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="email">Электронная почта</label>
+            <input class="registration-form__field" type="email" id="email">
+            <button class="registration-form__button" type="reset"></button>
           </div>
-        </div>
-        <div class="form__row clearfix">
-          <div class="form__group">
-            <label class="form__label" for="facebook">Фейсбук</label>
-            <input class="form__field" type="text" id="facebook">
-            <button class="clear-button" type="reset"></button>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="facebook">Фейсбук</label>
+            <input class="registration-form__field" type="text" id="facebook">
+            <button class="registration-form__button" type="reset"></button>
           </div>
-          <div class="form__group">
-            <label class="form__label" for="instagram">Инстаграм</label>
-            <input class="form__field" type="text" id="instagram">
-            <button class="clear-button" type="reset"></button>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="instagram">Инстаграм</label>
+            <input class="registration-form__field" type="text" id="instagram">
+            <button class="registration-form__button" type="reset"></button>
           </div>
         </div>
       </form>
     </div>
-    <div class="form__row form__row--button">
+    <div class="button-wrapper">
       <button class="button button--wide button--grey" type="submit">Готово</button>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="js/script.min.js"></script>
 </body>

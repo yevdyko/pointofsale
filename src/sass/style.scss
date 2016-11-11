@@ -1,22 +1,13 @@
-@import "foundation/__normalize.scss";
+@import "reset/normalize";
 
-/* Base */
-
-@import "base/mixins/mixin";
+@import "library/library";
 @import "base/base";
-
-/* Project*/
+/*@import "patterns/patterns";*/
+@import "components/components";
 
 @import "project/layout";
 @import "project/header";
 
-/* Hamburgers */
-
-@import "hamburgers/hamburgers";
-
-/* Font-Awesome*/
-
 @import "font-awesome/font-awesome";
-
-/* Components */
-@import "components/components";
+@import "hamburgers/hamburgers";
+@import "pure-drawer/pure-drawer";
