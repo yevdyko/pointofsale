@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <div class="header__cancel">
-          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="fa fa-chevron-left" aria-hidden="true"></span>
           <a class="header__link" href="order_details.html">Отмена</a>
         </div>
         <div class="header__text">
@@ -21,43 +21,48 @@
         </div>
       </div>
     </header>
-    <section class="order__header">
-      <div class="order__row">
-        <div class="col-xs-12">
-          <ul class="order__list">
-            <li class="order__item">
-              <span>Номер заказа:</span>
-              <span>012900150328</span>
-            </li>
-            <li class="order__item">
-              <span>Гость:</span>
-              <span>Случайный</span>
-            </li>
-            <li class="order__item">
-              <span>Тип заказа:</span>
-              <span>С собой</span>
-            </li>
-            <li class="order__item">
-              <span>Дата заказа:</span>
-              <span>10/16/2016 20:34:21</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <form class="order__form" action="#" method="POST">
-      <fieldset class="order__field">
-        <legend class="order__label">Добавить теги:</legend>
-        <textarea class="order__textarea" name="tags"></textarea>
-      </fieldset>
-      <fieldset class="order__field">
-        <legend class="order__label">Добавить комментарии:</legend>
-        <textarea class="order__textarea" name="comment"></textarea>
-      </fieldset>
-    </form>
-
-    <div class="form__row form__row--button">
-      <input class="btn btn--done btn--bggrey" type="submit" value="Готово">
+    <div class="content-wrapper content-wrapper--comment">
+      <section class="details">
+        <ul class="details__list">
+          <li class="details__item">
+            <strong>Номер заказа:</strong>
+            <span>012900150328</span>
+          </li>
+          <li class="details__item">
+            <strong>Гость:</strong>
+            <span>Случайный</span>
+          </li>
+          <li class="details__item">
+            <strong>Тип заказа:</strong>
+            <span>С собой</span>
+          </li>
+          <li class="details__item">
+            <strong>Статус:</strong>
+            <span>Оплачен</span>
+          </li>
+          <li class="details__item">
+            <strong>Итого:</strong>
+            <span>15,00 руб.</span>
+          </li>
+          <li class="details__item">
+            <strong>Дата заказа:</strong>
+            <span>10/16/2016 20:34:21</span>
+          </li>
+        </ul>
+      </section>
+      <form class="comment-form" action="#" method="POST">
+        <fieldset class="comment-form__field">
+          <legend class="comment-form__label">Добавить теги:</legend>
+          <textarea class="comment-form__textarea" name="tags"></textarea>
+        </fieldset>
+        <fieldset class="comment-form__field">
+          <legend class="comment-form__label">Добавить комментарий:</legend>
+          <textarea class="comment-form__textarea" name="comment"></textarea>
+        </fieldset>
+      </form>
+    </div>
+    <div class="button-wrapper">
+      <button class="button button--wide button--grey" type="submit">Готово</button>
     </div>
   </div>
 
