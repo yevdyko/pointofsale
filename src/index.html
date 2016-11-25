@@ -24,12 +24,35 @@
             <img src="img/cafecultura-logo.svg" height="30px" alt="Кафе Культура">
           </a>
         </div>
-        <button class="hamburger hamburger--squeeze" type="button">
+        <!-- <button class="hamburger hamburger--squeeze" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
-        </button>
-        <nav class="menu">
+        </button> -->
+        <div class="pure-container" data-effect="pure-effect-slide">
+          <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
+          <label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+            <span class="pure-toggle-icon"></span>
+          </label>
+          <div class="pure-drawer" data-position="right">
+            <div class="row collapse">
+              <div class="large-12 columns">
+                <ul class="nav-primary">
+                  <li>
+                    <a href="orders.html">Заказы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pure-pusher-container">
+            <div class="pure-pusher">
+
+            </div>
+          </div>
+          <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+        </div>
+        <!-- <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
               <a href="#" class="menu__link">Панель управления</a>
@@ -38,7 +61,7 @@
               <a href="#" class="menu__link">Выйти</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
       </div>
     </header>
 
@@ -173,14 +196,6 @@
               <div class="catalog-item__title">Травяной чай</div>
             </div>
           </div>
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item">
-              <div class="catalog-item__image">
-                <img src="http://placehold.it/50x50" height="50px" width="50px" alt="">
-              </div>
-              <div class="catalog-item__title">Травяной чай</div>
-            </div>
-          </div>
         </div>
         <div class="catalog-control">
           <a href="#" class="js-tab-control active" data-tab="js-tab-product">Напитки</a>
@@ -192,8 +207,57 @@
       <div class="right-pane">
         <div class="order">
           <h2 class="order-heading">
-            Гость:
-            <a href="#" class="order-heading__link">Петя</a>
+            <div class="order-guest">
+              <img src="img/default-avatar.jpg" width="30px" height="30px" alt="avatar" class="avatar">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Случайный <span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu--guest">
+                <li class="dropdown-menu__header">
+                  <a href="#" class="dropdown-menu__button">Готово</a>
+                  <a href="guests.html" class="dropdown-menu__button">Гости</a>
+                  <a href="guests_new.html" class="dropdown-menu__button">+</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <form action="#" method="get">
+                    <div class="form-group">
+                      <input type="search" class="form-control" placeholder="Поиск гостя">
+                    </div>
+                  </form>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="#" class="dropdown-menu__link">
+                    <span>Случайный</span>
+                  </a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="guest_details.html" class="dropdown-menu__link">
+                    <span>Петя Смирной</span>
+                  </a>
+                  <span class="edit-link__item fa fa-chevron-right"></span>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="guest_details.html" class="dropdown-menu__link">
+                    <span>Ваня Кислый</span>
+                  </a>
+                  <span class="edit-link__item fa fa-chevron-right"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="order-type">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">С собой <span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu--type">
+                <li class="dropdown-menu__item">
+                  <a href="#" class="dropdown-menu__link">
+                    <span>С собой</span>
+                  </a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="#" class="dropdown-menu__link">
+                    <span>На месте</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </h2>
           <ul class="order-list">
             <li class="order-item">
@@ -298,19 +362,8 @@
     </div>
   </div>
 
-  <!-- Модальное окно «Гость» -->
-  <div class="modal-content-wrapper modal-content-wrapper--guest">
-    <div class="modal-content">
-      <button class="js-modal-close js-modal-close--guest"></button>
-      <div class="guest">
-        <h1 class="guest__title">Добавить гостя:</h1>
-        <p class="guest__text">В разработке.</p>
-        <a href="/guests_new.html" class="menu__link">Новый Гость</a>
-      </div>
-    </div>
-  </div>
-
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/script.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.status-not-added {
+  color: $dark-gray;
+}
+
+.status-added {
+  color: $green;
+}
+
+.open-order {
+  display: block;
+  width: 40px;
+  height: 32px;
+
+  background: url(../img/menu.png) center 2px no-repeat transparent;
+}

@@ -38,13 +38,13 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: $color-white;
-  background-color: $color-green;
+  color: $white;
+  background-color: $green;
 
   &:hover,
   &:focus,
   &:visited {
-    color: $color-white;
-    background-color: $color-green;
+    color: $white;
+    background-color: $green;
   }
 }

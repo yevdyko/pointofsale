@@ -11,7 +11,7 @@
   line-height: 1.4;
   vertical-align: middle;
 
-  border-bottom: 1px solid $color-steelgrey;
+  border-bottom: $base-border;
 
   list-style: none;
 }
@@ -45,7 +45,7 @@
   line-height: 1.4;
   text-align: right;
 
-  color: $color-red;
+  color: $red;
 
   cursor: pointer;
 }

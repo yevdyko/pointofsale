@@ -1,16 +1,19 @@
-.order-history {
-  width: 92%;
-  margin: 0 4%;
-
-  background-color: transparent;
-}
-
-a,
-a:hover,
-a:focus,
-a:visited,
-a:active {
-  color: #3498db;
+a {
+  font-weight: 500;
+  color: $link-color;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $link-color--action;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+
 }
+
