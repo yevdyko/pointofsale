@@ -1,9 +1,10 @@
 .header {
   padding: 20px 0;
 
+  line-height: 30px;
+
   background-color: $base-background-color;
   border-bottom: $base-border;
-  line-height: 30px;
 }
 
 .container {
@@ -17,17 +18,15 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 15px;
-  /*padding-right: 30px;*/
 }
 
-/* Username */
-
 .user {
-  cursor: pointer;
+  z-index: 5;
 
   flex-grow: 1;
+  padding-left: 10px;
 
-  z-index: 5;
+  cursor: pointer;
 }
 
 .user__icon {
@@ -37,16 +36,12 @@
   margin-right: 5px;
 
   line-height: 30px;
-  color: $color-icongrey;
+  color: $icon-gray;
   text-align: center;
 
   background-color: $white;
-  border: 2px solid $color-icongrey;
+  border: 2px solid $icon-gray;
   border-radius: 15px;
-}
-
-.glyphicon-user {
-  top: 0;
 }
 
 .user__link {
@@ -65,8 +60,6 @@
   }
 }
 
-/* Logo */
-
 .logo {
   position: absolute;
   left: 0;
@@ -80,17 +73,13 @@
   margin-top: 4px;
 }
 
-/* Menu */
-
 .menu {
   display: none;
 }
 
-/* Header Cancel */
-
 .header__cancel {
   position: absolute;
-  top: 12px;
+  top: 9px;
 
   padding: 10px 20px;
 
@@ -101,33 +90,20 @@
   border: 0;
   border-radius: 4px;
 
-  span {
+  &::before {
+    position: relative;
     top: 2px;
 
-    margin-right: 10px;
+    margin-right: 5px;
 
+    font-family: FontAwesome;
     font-size: 150%;
-  }
 
-}
-
-/* Header Text */
-
-.header__text {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-  h1 {
-    margin: 0;
-    font-size: 26px;
-    line-height: 30px;
+    content: "\f104";
   }
 }
 
 .header__link {
-  margin-top: 3px;
-
   font-size: 18px;
   line-height: 1;
   color: $black;
@@ -141,4 +117,15 @@
   }
 }
 
+.header__text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
+  h1 {
+    margin: 0;
+
+    font-size: 26px;
+    line-height: 30px;
+  }
+}

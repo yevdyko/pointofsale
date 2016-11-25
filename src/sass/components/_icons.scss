@@ -1,9 +1,9 @@
 .status-not-added {
-  color: $dark-gray;
+  color: $link-color--action;
 }
 
 .status-added {
-  color: $green;
+  color: $link-color;
 }
 
 .open-order {
@@ -12,4 +12,15 @@
   height: 32px;
 
   background: url(../img/menu.png) center 2px no-repeat transparent;
+}
+
+.icon-remove {
+  top: 0;
+
+  padding-top: 2px;
+  padding-left: 12px;
+
+  color: $total-gray;
+
+  cursor: pointer;
 }
