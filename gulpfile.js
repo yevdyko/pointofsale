@@ -21,25 +21,25 @@ var ghPages = require('gulp-gh-pages');
 
 var path = {
   build: {
-    html: 'build/',
-    js: 'build/js/',
-    css: 'build/css/',
-    img: 'build/img/',
+    html:  'build/',
+    js:    'build/js/',
+    css:   'build/css/',
+    img:   'build/img/',
     fonts: 'build/fonts/'
   },
   src: {
-    html: 'src/*.html',
-    js: 'src/js/*.js',
-    style: 'src/sass/style.scss',
-    img: 'src/img/**/*.*',
-    fonts: 'src/fonts/**/*.*'
+    html:  'source/*.html',
+    js:    'source/js/*.js',
+    style: 'source/sass/style.scss',
+    img:   'source/img/**/*.*',
+    fonts: 'source/fonts/**/*.*'
   },
   watch: {
-    html: 'src/**/*.html',
-    js: 'src/js/**/*.js',
-    style: 'src/sass/**/*.scss',
-    img: 'src/img/**/*.*',
-    fonts: 'src/fonts/**/*.*'
+    html:  'source/**/*.html',
+    js:    'source/js/**/*.js',
+    style: 'source/sass/**/*.scss',
+    img:   'source/img/**/*.*',
+    fonts: 'source/fonts/**/*.*'
   },
   clean: './build'
 };

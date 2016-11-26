@@ -1,0 +1,166 @@
+.order-heading {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0 20px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  background-color: $white;
+  border-radius: 0;
+  border-bottom: $base-border;
+  border-color: $base-border-color;
+
+  cursor: pointer;
+
+  a {
+    color: $black;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      color: $link-color;
+    }
+  }
+}
+
+.order-guest {
+  padding: 15px 4px;
+  padding-left: 0;
+  margin-right: 50px;
+}
+
+.order-type {
+  padding: 15px 4px;
+  padding-right: 0;
+  line-height: 30px;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
+  border-color: $base-border-color;
+}
+
+.dropdown-menu--type {
+  margin-top: 0;
+  padding: 0;
+  min-width: 130px;
+  left: 175px;
+}
+
+.dropdown-menu--guest {
+  margin-top: 0;
+  padding: 0;
+  width: 410px;
+  left: -240px;
+}
+
+.dropdown-menu__header {
+  @include flex-container($alignment: center);
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 60px;
+  border-bottom: 2px solid $blue;
+  font-size: 16px;
+  /*line-height: 20px;*/
+}
+
+.dropdown-menu > li > .dropdown-menu__button {
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.dropdown-menu__item {
+  @include flex-container($alignment: center);
+
+  margin: 0 10px;
+  padding: 0 5px;
+  border-bottom: $base-border;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.dropdown-menu__link {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.dropdown-menu > li > .dropdown-menu__link {
+  padding: 20px 0;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+form {
+  width: 100%;
+}
+
+.edit-link__item {
+  color: $green;
+  font-size: 18px;
+  border-left: $base-border;
+  line-height: 40px;
+  padding: 10px 8px 10px 20px;
+}
+
+.form-control {
+  padding: 15px 10px 15px 40px;
+  width: 100%;
+  font-size: 18px;
+  height: 56px;
+}
+
+.order-heading__link {
+  cursor: pointer;
+
+  padding-left: 5px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+
+  color: $black;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+
+    color: $black;
+  }
+}
+
+.dropdown-toggle {
+  vertical-align: middle;
+}
+
+.avatar {
+  margin-right: 10px;
+  border-radius: 50%;
+  border: $base-border;
+}

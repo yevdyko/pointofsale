@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper wrapper--white">
+    <header class="header">
+      <div class="container">
+        <div class="header__cancel">
+          <a class="header__link" href="#" onClick="history.go(-1)">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1>Детали гостя</h1>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <section class="details details--guest">
+      <div class="details__row">
+        <div class="details__column">
+          <div class="details__image">
+            <img src="img/default-avatar.jpg" width="152" height="152" alt="avatar">
+          </div>
+        </div>
+        <div class="details__column">
+          <ul class="details__list">
+            <li class="details__item">
+              <div class="details__name">
+                <strong class="details__label">Имя *:</strong>
+                <span>Петя</span>
+              </div>
+              <div class="details__surname">
+                <strong class="details__label">Фамилия *:</strong>
+                <span>Сидоров</span>
+              </div>
+            </li>
+            <li class="details__item">
+              <strong class="details__label1">Телефон:</strong>
+              <span>+375 29 123-45-67</span>
+            </li>
+            <li class="details__item">
+              <strong class="guest__label1">Эл. почта:</strong>
+              <span>sidorov@mail.com</span>
+            </li>
+            <li class="details__item">
+              <strong class="guest__label1">Фейсбук:</strong>
+              <span>sidorov</span>
+            </li>
+            <li class="details__item">
+              <strong class="guest__label1">Инстаграм:</strong>
+              <span>sidorov</span>
+            </li>
+          </ul>
+        </div>
+        <div class="details__column">
+          <div class="details__link">
+            <a href="guests_edit.html" class="edit-link">Редактировать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="table-wrapper">
+      <h2 class="order-history__title">История заказов</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <span>
+                Номер заказа
+              </span>
+            </th>
+            <th>
+              <span>
+                Тип
+              </span>
+            </th>
+            <th>
+              <span>
+                Статус
+              </span>
+            </th>
+            <th>
+              <span>
+                Итого
+              </span>
+            </th>
+            <th>
+              <span>
+                Дата заказа
+              </span>
+            </th>
+            <th>
+              <span>
+                Теги
+              </span>
+            </th>
+            <th>
+              <span>
+                Комментарий
+              </span>
+            </th>
+            <th>
+              <span>
+                Бариста
+              </span>
+            </th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>012900150328</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td>10,00 руб.</td>
+            <td>10/16/2016 20:34:21</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td class="long-string">Влад</td>
+            <td>
+              <a href="#" class="open-order"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012870175655</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>2,00 руб.</td>
+            <td>10/15/2016 08:38:07</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td class="long-string">Влад</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012850132615</td>
+            <td>На месте</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>5,50 руб.</td>
+            <td>10/14/2016 20:23:43</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td class="long-string">Влад</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012900150328</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>4,00 руб.</td>
+            <td>10/13/2016 16:34:21</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td class="long-string">Влад</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012870175655</td>
+            <td>На месте</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>10,00 руб.</td>
+            <td>10/12/2016 10:38:07</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td class="long-string">Влад</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012850132615</td>
+            <td>На месте</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>12,50 руб.</td>
+            <td>10/11/2016 10:23:43</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td class="long-string">Влад</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012900150328</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added"></span>
+            </td>
+            <td>2,50 руб.</td>
+            <td>10/10/2016 13:34:21</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added"></span>
+            </td>
+            <td class="long-string">Александр</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <div class="button-wrapper">
+      <button class="button button--more button--grey" type="submit">Показать больше</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
