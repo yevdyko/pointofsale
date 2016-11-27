@@ -5,6 +5,10 @@
 
   background-color: $base-background-color;
   border-bottom: $base-border;
+
+  &--main {
+    padding: 15px 0;
+  }
 }
 
 .container {
@@ -29,23 +33,25 @@
   cursor: pointer;
 }
 
-.user__icon {
-  display: inline-block;
+.icon-user {
+  /*display: inline-block;
   width: 30px;
-  height: 30px;
+  height: 30px;*/
   margin-right: 5px;
 
   line-height: 30px;
   color: $icon-gray;
-  text-align: center;
+  /*text-align: center;
 
   background-color: $white;
   border: 2px solid $icon-gray;
-  border-radius: 15px;
+  border-radius: 15px;*/
 }
 
 .user__link {
-  font-size: 16px;
+  @include flex-container($spacing: flex-start, $alignment: center);
+
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
   color: $black;
@@ -57,6 +63,12 @@
   &:visited {
     color: $black;
     text-decoration: none;
+  }
+
+  img {
+    border-radius: 50%;
+    border: $base-border;
+    margin-right: 10px;
   }
 }
 

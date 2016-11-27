@@ -143,3 +143,20 @@
     background-color: $green;
   }
 }
+
+.btn-select {
+  width: 180px;
+  padding: 9px 20px;
+
+  text-transform: uppercase;
+
+  border: 0;
+  border-radius: 4px;
+}
+
+.btn-success {
+  color: $white;
+
+  background: #16bb8e;
+  border-color: #3d987f;
+}

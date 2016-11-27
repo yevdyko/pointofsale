@@ -11,13 +11,13 @@
 <body>
   <div class="wrapper">
 
-    <header class="header">
+    <header class="header header--main">
       <div class="container">
         <div class="user">
-          <div class="user__icon">
-            <span class="glyphicon glyphicon-user"></span>
-          </div>
-          <a href="#" class="user__link">Алексей</a>
+          <a href="select_user.html" class="user__link">
+            <img src="img/aleksei.jpg" width="40px" height="40px" alt="avatar">
+            <span>Алексей</span>
+          </a>
         </div>
         <div class="logo">
           <a href="#" class="logo__link">
@@ -203,32 +203,39 @@
         <div class="order">
           <div class="order-heading">
             <div class="order-guest">
-              <img src="img/default-avatar.jpg" width="30px" height="30px" alt="avatar" class="avatar">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Случайный <span class="caret"></span></a>
+              <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Случайный <span class="fa fa-chevron-down"></span>
+              </a>
               <ul class="dropdown-menu dropdown-menu--guest">
                 <li class="dropdown-menu__header">
-                  <a href="#" class="dropdown-menu__button">Готово</a>
+                  <!-- <a href="#" class="dropdown-menu__button"></a> -->
                   <a href="guests.html" class="dropdown-menu__button">Гости</a>
-                  <a href="guests_new.html" class="dropdown-menu__button">+</a>
+                  <a href="guests_new.html" class="dropdown-menu__button">
+                    <img src="img/plus.png" alt="+">
+                  </a>
                 </li>
                 <li class="dropdown-menu__item">
-                  <div class="form-group">
-                    <input type="search" class="form-control" placeholder="Поиск гостя">
+                  <div class="guest-search">
+                    <input type="search" class="guest-search__text" placeholder="Поиск гостя">
                   </div>
                 </li>
                 <li class="dropdown-menu__item">
                   <a href="#" class="dropdown-menu__link">
+                    <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
                     <span>Случайный</span>
                   </a>
                 </li>
                 <li class="dropdown-menu__item">
                   <a href="guest_details.html" class="dropdown-menu__link">
-                    <span>Петя Смирной</span>
+                    <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
+                    <span>Петя Смирнов</span>
                   </a>
                   <span class="edit-link__item fa fa-chevron-right"></span>
                 </li>
                 <li class="dropdown-menu__item">
                   <a href="guest_details.html" class="dropdown-menu__link">
+                    <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
                     <span>Ваня Кислый</span>
                   </a>
                   <span class="edit-link__item fa fa-chevron-right"></span>
@@ -236,7 +243,9 @@
               </ul>
             </div>
             <div class="order-type">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">С собой <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                С собой <span class="fa fa-chevron-down"></span>
+              </a>
               <ul class="dropdown-menu dropdown-menu--type">
                 <li class="dropdown-menu__item">
                   <a href="#" class="dropdown-menu__link">
@@ -305,29 +314,8 @@
     </div>
   </div>
 
-  <!-- Модальное окно «Выбрать пользователя» -->
-  <div class="modal-content-wrapper modal-content-wrapper--username">
-    <div class="modal-content">
-      <button class="js-modal-close js-modal-close--username"></button>
-      <ul class="user__list">
-        <li class="user__item">
-          <a href="#" class="btn btn-default btn-select">Выбрать</a>
-          <span class="user__name">Алексей</span>
-        </li>
-        <li class="user__item">
-          <a href="#" class="btn btn-default btn-select">Выбрать</a>
-          <span class="user__name">Александр</span>
-        </li>
-        <li class="user__item">
-          <a href="#" class="btn btn-default btn-select">Выбрать</a>
-          <span class="user__name">Влад</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-
   <!-- Модальное окно «Оплатить» -->
-  <div class="modal-content-wrapper modal-content-wrapper--checkout">
+  <div class="modal-content-wrapper modal-content-wrapper--checkout" style="display:none">
     <div class="modal-content">
       <button class="js-modal-close js-modal-close--checkout"></button>
       <div class="checkout">
