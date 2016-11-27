@@ -1,0 +1,36 @@
+.row {
+  padding-top: 20px;
+  margin: 0 10px;
+}
+
+.guest {
+  padding: 10px 0;
+  padding-bottom: 20px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  background-color: $base-background-color;
+  border: $base-border;
+  border-radius: 0;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.guest__title {
+  padding: 10px 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.guest__button {
+  display: inline-block;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

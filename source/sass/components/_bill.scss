@@ -1,6 +1,5 @@
 .bill {
-  width: 80%;
-  padding: 20px 30px;
+  padding: 20px 25px;
   margin: 0 auto;
   margin-bottom: 30px;
 
@@ -8,16 +7,16 @@
   font-weight: 400;
   line-height: 1.2;
 
-  background-color: $white;
+  background-color: $base-background-color;
   border: $base-border;
   border-radius: 0;
 
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 3px #dfdfdf;
 }
 
 .bill__wrapper {
-  width: 42%;
-  padding-top: 20px;
+  width: 35%;
+  padding-top: 25px;
   margin: 0 auto;
 }
 
@@ -28,12 +27,14 @@
   vertical-align: middle;
 }
 
-.bill__guest {
-  line-height: 30px;
-}
+.bill__title {
+  @include flex-container($spacing: flex-start);
 
-.bill__type {
   line-height: 30px;
+
+  span:first-child {
+    margin-right: 10px;
+  }
 }
 
 .bill__list {
@@ -48,16 +49,10 @@
   background-size: 10px 2px;
 }
 
-
 .bill__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  @include flex-container($alignment: center);
+
   padding: 5px 0;
-
-  vertical-align: middle;
-
-  list-style: none;
 
   &:first-child {
     padding-top: 20px;
@@ -66,8 +61,8 @@
 
 .bill__title {
   flex-grow: 1;
-  width: 75%;
-  padding-right: 10px;
+  width: 85%;
+  margin-right: 10px;
 }
 
 .bill__quantity {
@@ -77,11 +72,23 @@
 }
 
 .bill__price {
-  width: 75px;
-  padding-left: 10px;
+  width: 65px;
+  margin-left: 10px;
 
   font-weight: 600;
   text-align: right;
+
+  &--total {
+    width: auto;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &--discount {
+    padding: 5px 0;
+  }
 }
 
 .bill__subtotal {
@@ -94,7 +101,7 @@
   background-repeat: repeat-x;
 
   .bill__item {
-    padding: 5px 0;
+    padding: 0;
   }
 
   .bill__item:first-child {
@@ -102,22 +109,13 @@
   }
 
   .bill__item:last-child {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 }
 
-.bill__sub {
-  padding: 5px 0;
-}
-
-.bill__price--discount {
-  padding: 5px 0;
-}
-
 .bill__total {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  @include flex-container($alignment: flex-end);
+
   width: 100%;
   padding: 20px 0;
   padding-bottom: 10px;
@@ -136,48 +134,4 @@
   line-height: 1;
 
   color: $total-gray;
-}
-
-.bill__price--total {
-  width: auto;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.row {
-  padding-top: 20px;
-  margin: 0 10px;
-}
-
-.guest {
-  padding: 10px 0;
-  padding-bottom: 20px;
-  margin: 0 auto;
-
-  text-align: center;
-
-  background-color: $base-background-color;
-  border: $base-border;
-  border-radius: 0;
-
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-
-.guest__title {
-  padding: 10px 0;
-  margin: 0;
-
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.guest__button {
-  display: inline-block;
-  margin-right: 5px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
