@@ -1,19 +1,19 @@
 .filter {
-  display: flex;
-  justify-content: space-between;
+  @include flex-container();
+
   margin-top: 20px;
   margin-bottom: 25px;
 }
 
 .filter__item {
-  display: flex;
-  align-items: center;
+  @include flex-container($alignment: center);
+
   min-width: 95px;
 }
 
 .filter__title {
   margin: 0;
-  margin-right: 8px;
+  margin-right: 10px;
 
   font-size: 16px;
   font-weight: 500;
@@ -27,7 +27,7 @@
   outline: none;
 }
 
-.filter select {
+.filter__type select {
   height: 35px;
   padding: 0 10px;
   padding-right: 20px;
