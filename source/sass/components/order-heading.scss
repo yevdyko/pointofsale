@@ -44,101 +44,28 @@
   line-height: 30px;
 }
 
-.dropdown-menu {
-  margin-top: 0;
-  margin-left: -1px;
-  margin-right: -1px;
-  border-radius: 0;
-  border-color: $base-border-color;
-}
-
-.dropdown-menu--type {
-  margin-top: 0;
-  padding: 0;
-  min-width: 130px;
-  left: 175px;
-}
-
-.dropdown-menu--guest {
-  margin-top: 0;
-  padding: 0;
-  width: 410px;
-  left: -240px;
-}
-
-.dropdown-menu__header {
-  @include flex-container($alignment: center);
-
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  border-bottom: 2px solid $blue;
-}
-
-.dropdown-menu > li > .dropdown-menu__button {
-  padding: 20px;
-  flex: 1;
-
-  font-size: 20px;
-  line-height: 20px;
-
-  &:first-child {
-    flex: 2;
-    text-align: right;
-    padding-right: 30px;
-  }
-
-  &:last-child {
-    padding: 14px 20px;
-    text-align: right;
-  }
-
-  &:hover {
-    background-color: transparent;
-  }
-}
-
-.dropdown-menu__item {
-  @include flex-container($alignment: center);
-
-  margin: 0 10px;
-  padding: 0 5px;
-  border-bottom: $base-border;
-
-  &:last-child {
-    border-bottom: 0;
-  }
-}
-
-.dropdown-menu__link {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.dropdown-menu > li > .dropdown-menu__link {
-  @include flex-container($alignment: center);
-
-  padding: 15px 0;
-}
-
 .guest-search {
   width: 100%;
   margin: 20px 0;
 }
 
 .edit-link__item {
-  color: $blue;
-  font-size: 18px;
-  border-left: $base-border;
-  line-height: 40px;
   padding: 10px 8px 10px 20px;
+
+  font-size: 18px;
+  line-height: 40px;
+  color: $blue;
+
+  border-left: $base-border;
 }
 
 .guest-search__text {
   width: 100%;
-  padding: 15px 10px 15px 40px;
-  font-size: 18px;
   height: 56px;
+  padding: 15px 10px 15px 40px;
+
+  font-size: 18px;
+
   background: url(../img/search-gray.png) 10px center no-repeat;
   border: $base-border;
   border-width: 2px;
@@ -147,38 +74,32 @@
 
   &:hover,
   &:focus {
-    border-width: 2px;
     border-color: $dark-blue;
+    border-width: 2px;
   }
 }
 
 .order-heading__link {
-  cursor: pointer;
-
   padding-left: 5px;
 
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
-  text-decoration: none;
-
   color: $black;
+  text-decoration: none;
+  cursor: pointer;
 
   &:hover,
   &:focus,
   &:visited {
-    text-decoration: none;
-
     color: $black;
+    text-decoration: none;
   }
-}
-
-.dropdown-toggle {
-  vertical-align: middle;
 }
 
 .avatar {
   margin-right: 10px;
-  border-radius: 50%;
+
   border: $base-border;
+  border-radius: 50%;
 }
