@@ -1,5 +1,6 @@
 .comment-form {
-  display: flex;
+  @include flex-container();
+
   flex-wrap: wrap;
 }
 
@@ -26,7 +27,7 @@
   text-transform: none;
 
   background-color: $base-background-color;
-  border: 2px solid $base-border-color;
+  border: $base-border;
   outline: none;
 
   resize: none;

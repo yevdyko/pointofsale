@@ -28,9 +28,7 @@
 }
 
 .registration-form__image {
-  display: block;
-  width: 152px;
-  margin: 0 auto;
+  @include flex-container($spacing: center)
 
   img {
     display: block;
@@ -56,13 +54,13 @@
   font-size: 18px;
   color: $black;
 
-  border: 2px solid $base-border-color;
+  border: $base-border;
   border-radius: 4px;
   outline: 0;
 
   &:hover,
   &:focus {
-    border: 2px solid $link-color--action;
+    border-color: $link-color--action;
   }
 }
 
@@ -81,7 +79,8 @@
 
   background: url(../img/clear-button.png) center center no-repeat;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: $base-border;
+  border-color: transparent;
   outline: 0;
 }
 

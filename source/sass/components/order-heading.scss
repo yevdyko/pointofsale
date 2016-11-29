@@ -68,14 +68,12 @@
 
   background: url(../img/search-gray.png) 10px center no-repeat;
   border: $base-border;
-  border-width: 2px;
   border-radius: 4px;
   outline: none;
 
   &:hover,
   &:focus {
     border-color: $dark-blue;
-    border-width: 2px;
   }
 }
 
