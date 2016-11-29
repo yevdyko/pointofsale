@@ -1,0 +1,14 @@
+.avatar {
+  margin-right: 10px;
+
+  vertical-align: middle;
+
+  border: $base-border;
+  border-radius: 50%;
+}
+
+table .avatar {
+  width: 27px;
+  height: 27px;
+  margin-right: 5px;
+}
