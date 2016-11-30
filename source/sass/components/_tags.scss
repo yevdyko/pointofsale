@@ -1,0 +1,29 @@
+.tags {
+  display: inline-block;
+  width: calc(100% - 120px);
+  padding-left: 5px;
+  font-size: 0;
+}
+
+.tags__item {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px 8px 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #494949;
+  cursor: default;
+
+  background-color: $light-gray;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $link-color--action;
+    color: $white;
+    text-decoration: none;
+  }
+}
