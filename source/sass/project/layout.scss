@@ -18,6 +18,12 @@ body {
   }
 }
 
+.page-content {
+  @include flex-container($spacing: center);
+
+  padding-top: 25px;
+}
+
 .content-wrapper {
   width: 80%;
   margin: 0 auto;
@@ -37,10 +43,9 @@ body {
 }
 
 .main-container {
-  display: flex;
-  flex-direction: row;
+  @include flex-container();
+
   flex-wrap: nowrap;
-  justify-content: space-between;
 
   margin: 0;
   padding: 0;
