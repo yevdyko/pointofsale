@@ -1,7 +1,7 @@
 .bill {
+  width: 360px;
   padding: 20px 25px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
   font-size: 16px;
   font-weight: 400;
@@ -14,17 +14,29 @@
   box-shadow: 0 0 3px #dfdfdf;
 }
 
-.bill__wrapper {
-  width: 35%;
-  padding-top: 25px;
-  margin: 0 auto;
-}
-
 .bill__header {
   padding: 0;
   padding-bottom: 10px;
 
   vertical-align: middle;
+}
+
+.bill__content {
+  @include dotted-border($light-gray, 10px);
+
+  padding-top: 20px;
+}
+
+.bill__guest-description {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  margin: 0;
+  padding-top: 13px;
+
+  p {
+    flex-grow: 1;
+  }
 }
 
 .bill__title {
@@ -41,22 +53,13 @@
   height: 200px;
   padding-bottom: 63px;
   margin-bottom: 77px;
-
-  background-color: $base-background-color;
-  background-image: linear-gradient(to right, #e2e2e2 30%, rgba(255, 255, 255, 0) 0%);
-  background-position: top;
-  background-repeat: repeat-x;
-  background-size: 10px 2px;
 }
 
 .bill__item {
   @include flex-container($alignment: center);
 
-  padding: 5px 0;
-
-  &:first-child {
-    padding-top: 20px;
-  }
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 .bill__title {
@@ -80,6 +83,7 @@
 
   &--total {
     width: auto;
+    margin-left: 0;
 
     font-size: 36px;
     font-weight: 700;
@@ -91,40 +95,23 @@
   }
 }
 
+.bill__footer {
+  @include dotted-border($light-gray, 10px);
+
+  padding-top: 15px;
+
+}
+
 .bill__subtotal {
-  width: 100%;
+  @include flex-container($direction: column);
 
-  background-color: $base-background-color;
-  background-image: linear-gradient(to right, #e2e2e2 30%, rgba(255, 255, 255, 0) 0%);
-  background-position: top;
-  background-size: 10px 2px;
-  background-repeat: repeat-x;
-
-  .bill__item {
-    padding: 0;
-  }
-
-  .bill__item:first-child {
-    padding-top: 15px;
-  }
-
-  .bill__item:last-child {
-    padding-bottom: 10px;
-  }
+  padding-bottom: 10px;
 }
 
 .bill__total {
-  @include flex-container($alignment: flex-end);
+  @include dotted-border($light-gray, 10px);
 
-  width: 100%;
-  padding: 20px 0;
-  padding-bottom: 10px;
-
-  background-color: $base-background-color;
-  background-image: linear-gradient(to right, #e2e2e2 30%, rgba(255, 255, 255, 0) 0%);
-  background-position: top;
-  background-size: 10px 2px;
-  background-repeat: repeat-x;
+  padding-top: 20px;
 }
 
 .bill__text {

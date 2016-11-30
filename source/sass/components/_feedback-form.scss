@@ -1,0 +1,21 @@
+.feedback-form {
+
+}
+
+.feedback-form__title {
+  padding: 10px 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.feedback-form__button {
+  display: inline-block;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
