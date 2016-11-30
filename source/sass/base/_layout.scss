@@ -7,3 +7,22 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+a {
+  font-weight: 500;
+  color: $link-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $link-color--action;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+
+}
