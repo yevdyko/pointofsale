@@ -1,0 +1,155 @@
+.order {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  background-color: $white;
+  border: $base-border;
+  border-top-width: 0;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.order__heading {
+  @include flex-container($spacing: flex-start);
+
+  position: relative;
+
+  margin: 0;
+  padding: 0 20px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  background-color: $white;
+  border-radius: 0;
+  border-bottom: $base-border;
+  border-color: $base-border-color;
+
+  cursor: pointer;
+
+  a {
+    color: $black;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      color: $link-color;
+    }
+  }
+}
+
+.order__guest {
+  @include flex-container($alignment: center);
+
+  padding: 10px 4px;
+  padding-left: 0;
+  margin-right: 50px;
+}
+
+.order__type {
+  @include flex-container($alignment: center);
+
+  padding: 15px 4px;
+  padding-right: 0;
+  line-height: 30px;
+}
+
+.order__list {
+  height: 445px;
+  padding: 5px 20px;
+  padding-bottom: 63px;
+  margin-bottom: 77px;
+
+  list-style: none;
+
+  overflow-y: auto;
+}
+
+.order__item {
+  @include flex-container($alignment: flex-start);
+
+  padding: 20px 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  vertical-align: middle;
+
+  border-bottom: $base-border;
+
+  list-style: none;
+}
+
+.order__item-title {
+  width: 210px;
+  padding-right: 10px;
+}
+
+.order__item-quantity {
+  width: 35px;
+
+  text-align: left;
+}
+
+.order__item-price {
+  width: 65px;
+  padding-left: 10px;
+
+  font-weight: 600;
+  text-align: right;
+}
+
+.order__item-icon {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  margin-left: 10px;
+
+  border: 1px solid $red;
+  border-radius: 50%;
+
+  span {
+    font-size: 12px;
+  }
+}
+
+.order__total {
+  @include flex-container($alignment: flex-end);
+  @include dotted-border($light-gray, 10px);
+
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+
+  width: 100%;
+  padding: 20px;
+}
+
+.order__total-text {
+  padding-bottom: 2px;
+
+  font-size: 24px;
+  line-height: 1;
+
+  color: $total-gray;
+}
+
+.order__total-price {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.order__control {
+  @include flex-container();
+
+  width: 100%;
+}

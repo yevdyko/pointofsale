@@ -201,50 +201,51 @@
 
       <div class="right-pane">
         <div class="order">
-          <div class="order-heading">
-            <div class="order-guest">
-              <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
+          <div class="order__heading">
+            <div class="order__guest">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Случайный <span class="fa fa-chevron-down"></span>
+                <img src="img/default-avatar.jpg" width="34px" height="34px" alt="avatar" class="avatar">
+                <span>Случайный</span>
+                <span class="fa fa-chevron-down icon-chevron-menu"></span>
               </a>
               <ul class="dropdown-menu dropdown-menu--guest">
                 <li class="dropdown-menu__header">
-                  <!-- <a href="#" class="dropdown-menu__button"></a> -->
                   <a href="guests.html" class="dropdown-menu__button">Гости</a>
                   <a href="guests_new.html" class="dropdown-menu__button">
                     <img src="img/plus.png" alt="+">
                   </a>
                 </li>
                 <li class="dropdown-menu__item">
-                  <div class="guest-search">
-                    <input type="search" class="guest-search__text" placeholder="Поиск гостя">
+                  <div class="dropdown-menu__search">
+                    <input type="search" class="dropdown-menu__input" placeholder="Поиск гостя">
                   </div>
                 </li>
                 <li class="dropdown-menu__item">
                   <a href="#" class="dropdown-menu__link">
-                    <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
+                    <img src="img/default-avatar.jpg" width="34px" height="34px" alt="avatar" class="avatar">
                     <span>Случайный</span>
                   </a>
                 </li>
                 <li class="dropdown-menu__item">
                   <a href="guest_details.html" class="dropdown-menu__link">
-                    <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
+                    <img src="img/default-avatar.jpg" width="34px" height="34px" alt="avatar" class="avatar">
                     <span>Петя Смирнов</span>
                   </a>
-                  <span class="edit-link__item fa fa-chevron-right"></span>
+                  <span class="fa fa-chevron-right icon-chevron"></span>
                 </li>
                 <li class="dropdown-menu__item">
                   <a href="guest_details.html" class="dropdown-menu__link">
-                    <img src="img/default-avatar.jpg" width="40px" height="40px" alt="avatar" class="avatar">
+                    <img src="img/default-avatar.jpg" width="34px" height="34px" alt="avatar" class="avatar">
                     <span>Ваня Кислый</span>
                   </a>
-                  <span class="edit-link__item fa fa-chevron-right"></span>
+                  <span class="fa fa-chevron-right icon-chevron"></span>
                 </li>
               </ul>
             </div>
-            <div class="order-type">
+            <div class="order__type">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                С собой <span class="fa fa-chevron-down"></span>
+                <span>С собой</span>
+                <span class="fa fa-chevron-down icon-chevron-menu"></span>
               </a>
               <ul class="dropdown-menu dropdown-menu--type">
                 <li class="dropdown-menu__item">
@@ -260,54 +261,54 @@
               </ul>
             </div>
           </div>
-          <ul class="order-list">
-            <li class="order-item">
-              <div class="order-item__title">Эспрессо</div>
-              <div class="order-item__quantity">х 1</div>
-              <div class="order-item__price">2,00</div>
-              <div class="order-item__icon">
+          <ul class="order__list">
+            <li class="order__item">
+              <div class="order__item-title">Эспрессо</div>
+              <div class="order__item-quantity">х 1</div>
+              <div class="order__item-price">2,00</div>
+              <div class="order__item-icon">
                 <span class="fa fa-times icon-remove" aria-hidden="true"></span>
               </div>
             </li>
-            <li class="order-item">
-              <div class="order-item__title">Американо</div>
-              <div class="order-item__quantity">х 1</div>
-              <div class="order-item__price">2,00</div>
-              <div class="order-item__icon">
+            <li class="order__item">
+              <div class="order__item-title">Американо</div>
+              <div class="order__item-quantity">х 1</div>
+              <div class="order__item-price">2,00</div>
+              <div class="order__item-icon">
                 <span class="fa fa-times icon-remove" aria-hidden="true"></span>
               </div>
             </li>
-            <li class="order-item">
-              <div class="order-item__title">Доппио</div>
-              <div class="order-item__quantity">х 5</div>
-              <div class="order-item__price">10,00</div>
-              <div class="order-item__icon">
+            <li class="order__item">
+              <div class="order__item-title">Доппио</div>
+              <div class="order__item-quantity">х 5</div>
+              <div class="order__item-price">10,00</div>
+              <div class="order__item-icon">
                 <span class="fa fa-times icon-remove" aria-hidden="true"></span>
               </div>
             </li>
-            <li class="order-item">
-              <div class="order-item__title">Травяной чай</div>
-              <div class="order-item__quantity">х 10</div>
-              <div class="order-item__price">18,00</div>
-              <div class="order-item__icon">
+            <li class="order__item">
+              <div class="order__item-title">Травяной чай</div>
+              <div class="order__item-quantity">х 10</div>
+              <div class="order__item-price">18,00</div>
+              <div class="order__item-icon">
                 <span class="fa fa-times icon-remove" aria-hidden="true"></span>
               </div>
             </li>
-            <li class="order-item">
-              <div class="order-item__title">Книга «Мои Полароиды»</div>
-              <div class="order-item__quantity">х 25</div>
-              <div class="order-item__price">100,00</div>
-              <div class="order-item__icon">
+            <li class="order__item">
+              <div class="order__item-title">Книга «Мои Полароиды»</div>
+              <div class="order__item-quantity">х 25</div>
+              <div class="order__item-price">100,00</div>
+              <div class="order__item-icon">
                 <span class="fa fa-times icon-remove" aria-hidden="true"></span>
               </div>
             </li>
           </ul>
-          <div class="order-total">
-            <span class="order-total__text">Итого:</span>
-            <span class="order-total__price">132,00</span>
+          <div class="order__total">
+            <span class="order__total-text">Итого:</span>
+            <span class="order__total-price">132,00</span>
           </div>
         </div>
-        <div class="order-control">
+        <div class="order__control">
           <a href="#" class="btn btn--clear">
             <span class="glyphicon glyphicon-ban-circle"></span>
           </a>
