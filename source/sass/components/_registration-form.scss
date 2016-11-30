@@ -44,6 +44,8 @@
 }
 
 .registration-form__field {
+  @include input-placeholder($dark-gray);
+
   z-index: 10;
 
   width: 100%;
