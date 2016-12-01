@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Point of Sale</title>
+  <title>Point of Stextale</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   crossorigin="anonymous">
@@ -11,62 +11,58 @@
 <body>
   <div class="wrapper wrapper--white">
     <header class="header">
-      <div class="container">
-        <div class="header__cancel">
+      <div class="header__inner">
+        <div class="header__toggle">
           <a class="header__link" href="#" onClick="history.go(-1)">Отмена</a>
         </div>
         <div class="header__text">
-          <h1>Детали гостя</h1>
+          <h1 class="header__title">Детали гостя</h1>
         </div>
       </div>
     </header>
     <div class="content-wrapper">
       <section class="details details--guest">
       <div class="details__row">
-        <div class="details__column">
-          <div class="details__image">
-            <img src="img/default-avatar.jpg" width="152" height="152" alt="avatar">
-          </div>
+        <div class="details__image">
+          <img class="details__avatar" src="img/george.png" width="152px" height="152px" alt="avatar">
         </div>
-        <div class="details__column">
+        <div class="details__column details__column--guest">
           <ul class="details__list">
             <li class="details__item">
               <div class="details__name">
-                <strong class="details__label">Имя *:</strong>
+                <strong>Имя *:</strong>
                 <span>Петя</span>
               </div>
-              <div class="details__surname">
-                <strong class="details__label">Фамилия *:</strong>
+              <div class="details__name">
+                <strong>Фамилия *:</strong>
                 <span>Сидоров</span>
               </div>
             </li>
             <li class="details__item">
-              <strong class="details__label1">Телефон:</strong>
+              <strong>Телефон:</strong>
               <span>+375 29 123-45-67</span>
             </li>
             <li class="details__item">
-              <strong class="guest__label1">Эл. почта:</strong>
+              <strong>Эл. почта:</strong>
               <span>sidorov@mail.com</span>
             </li>
             <li class="details__item">
-              <strong class="guest__label1">Фейсбук:</strong>
+              <strong>Фейсбук:</strong>
               <span>sidorov</span>
             </li>
             <li class="details__item">
-              <strong class="guest__label1">Инстаграм:</strong>
+              <strong>Инстаграм:</strong>
               <span>sidorov</span>
             </li>
           </ul>
         </div>
-        <div class="details__column">
-          <div class="details__link">
-            <a href="guests_edit.html" class="edit-link">Редактировать</a>
-          </div>
+        <div class="details__link details__link--guest">
+          <a href="guests_edit.html">Редактировать</a>
         </div>
       </div>
     </section>
     <div class="table-wrapper">
-      <h2 class="order-history__title">История заказов</h2>
+      <h2 class="details__title">История заказов</h2>
       <table>
         <thead>
           <tr>
@@ -250,30 +246,6 @@
               <span class="fa fa-check-circle fa-xl status-added"></span>
             </td>
             <td class="long-string">Влад</td>
-            <td>
-              <a href="#"></a>
-            </td>
-            <td>
-              <a href="order_details.html">
-                <span class="fa fa-chevron-right" aria-hidden="true"></span>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>012900150328</td>
-            <td>С собой</td>
-            <td>
-              <span class="fa fa-check-circle fa-xl status-added"></span>
-            </td>
-            <td>2,50 руб.</td>
-            <td>10/10/2016 13:34:21</td>
-            <td>
-              <span class="fa fa-check-circle fa-xl status-not-added"></span>
-            </td>
-            <td>
-              <span class="fa fa-check-circle fa-xl status-not-added"></span>
-            </td>
-            <td class="long-string">Александр</td>
             <td>
               <a href="#"></a>
             </td>

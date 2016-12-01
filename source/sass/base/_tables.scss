@@ -13,8 +13,6 @@ thead {
 th {
   font-weight: 500;
   text-transform: uppercase;
-
-  /*border-bottom: 2px solid shade($base-border-color, 25%); //??*/
 }
 
 th > span {
@@ -59,7 +57,7 @@ th {
 
 th,
 td {
-  height: 3em;
+  height: 3.5em;
 
   text-align: left;
   padding-right: 5px;
