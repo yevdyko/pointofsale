@@ -102,31 +102,22 @@
   }
 }
 
-.btn--clear,
-.btn--save {
+.btn-control {
   width: 21%;
   padding: 0;
 
   font-size: 30px;
 
-  color: $color-pureplatinum;
-  background-color: $color-cleargrey;
   border: 0;
-
-  &:hover,
-  &:focus,
-  &:visited {
-    color: $color-pureplatinum;
-    background-color: $color-cleargrey;
-  }
 }
 
 .glyphicon-ban-circle {
-  top: 8px;
+  top: 10px;
 }
 
 .glyphicon-floppy-disk {
-  top: 10px;
+  left: 1px;
+  top: 11px;
 }
 
 .btn--checkout {
@@ -165,4 +156,11 @@
 
   background: #16bb8e;
   border-color: #3d987f;
+}
+
+.btn-disabled {
+  background-color: $medium-gray;
+
+  pointer-events: none;
+  cursor: not-allowed;
 }
