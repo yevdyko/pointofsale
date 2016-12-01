@@ -21,3 +21,8 @@ a {
     text-decoration: underline;
   }
 }
+
+table a:hover,
+      a:focus {
+  color: $link-color;
+}
