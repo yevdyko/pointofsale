@@ -11,7 +11,7 @@
   }
 }
 
-.container {
+.header__inner {
   @include flex-container($alignment: center);
 
   flex-wrap: nowrap;
@@ -32,13 +32,6 @@
   cursor: pointer;
 }
 
-.icon-user {
-  margin-right: 5px;
-
-  line-height: 30px;
-  color: $icon-gray;
-}
-
 .user__link {
   @include flex-container($spacing: flex-start, $alignment: center);
 
@@ -55,12 +48,12 @@
     color: $black;
     text-decoration: none;
   }
+}
 
-  img {
-    border-radius: 50%;
-    border: $base-border;
-    margin-right: 10px;
-  }
+.user__avatar {
+  border-radius: 50%;
+  border: $base-border;
+  margin-right: 10px;
 }
 
 .logo {
@@ -80,9 +73,11 @@
   display: none;
 }
 
-.header__cancel {
+.header__toggle {
+  @include flex-container($alignment: center);
+
   position: absolute;
-  top: 9px;
+  top: 10px;
 
   padding: 10px 20px;
 
@@ -97,7 +92,7 @@
     position: relative;
     top: 2px;
 
-    margin-right: 5px;
+    margin-right: 10px;
 
     font-family: FontAwesome;
     font-size: 150%;
@@ -107,6 +102,8 @@
 }
 
 .header__link {
+  padding-top: 8px;
+
   font-size: 18px;
   line-height: 1;
   color: $black;
@@ -124,12 +121,12 @@
   @include flex-container($spacing: center);
 
   width: 100%;
+}
 
-  h1 {
-    margin: 0;
+.header__title {
+  margin: 0;
 
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 30px;
-  }
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
 }
