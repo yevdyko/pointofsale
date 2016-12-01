@@ -15,14 +15,9 @@ a {
   cursor: pointer;
 
   &:hover,
-  &:focus {
-    color: $link-color--action;
-  }
-
-  &:hover,
   &:focus,
   &:active {
+    color: $link-color--action;
     text-decoration: underline;
   }
-
 }

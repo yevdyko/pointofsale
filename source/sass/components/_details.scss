@@ -1,9 +1,5 @@
 .details {
   padding: 25px 0;
-  margin: 0 auto;
-  overflow: hidden;
-
-  font-size: 16px;
 
   &--guest {
     padding: 30px 0;
@@ -13,30 +9,90 @@
 .details__row {
   @include flex-container();
 
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .details__column {
   flex: 1;
 }
 
+.details__column--order .details__item strong {
+  width: 90px;
+}
+
 .details__list {
 }
 
 .details__item {
+  @include flex-container($spacing: flex-start);
+
   margin-bottom: 10px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 
   strong {
-    display: inline-block;
     width: 120px;
+    margin-right: 5px;
   }
 }
 
-.guest-details__title {
+.details__lable {
+  width: 120px;
+  margin-right: 5px;
+}
+
+.details__tags {
+  @include flex-container($spacing: flex-start);
+
+  flex-wrap: wrap;
+  width: calc(100% - 240px);
+}
+
+.details__tags-item {
+  padding: 5px 10px;
+  margin: 0 10px 8px 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: $black;
+  cursor: default;
+
+  background-color: $light-gray;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $link-color--action;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.details__link {
+  padding-top: 2px;
+}
+
+.details__text {
+  width: calc(100% - 120px);
+
+  p {
+    margin: 0;
+
+    font-size: 16px;
+    word-wrap: break-word;
+    vertical-align: top;
+  }
+}
+
+.guest-dketails__title {
   margin-top: 0;
 
   font-size: 16px;
@@ -52,8 +108,6 @@
 .guest__surname {
   display: inline-block;
 }
-
-
 
 .guest__row {
   margin-bottom: 0;
@@ -119,66 +173,3 @@
 .guest__link {
   padding-top: 5px;
 }
-
-.edit-link {
-  display: inline-block;
-  padding: 0;
-
-  line-height: 1.2;
-}
-
-.order-history__title {
-  font-size: 18px;
-  font-weight: 500;
-
-  margin-top: 0;
-  margin-bottom: 7px;
-}
-
-/*in*/
-
-.details__tags {
-  display: block;
-  float: left;
-
-  font-size: 0;
-}
-
-.details__tags {
-  /*width: calc(100% - 120px);*/
-  padding: 10px 0;
-}
-
-.details__comments {
-}
-
-.tags__title,
-.comments__title {
-  display: inline-block;
-  width: 120px;
-  font-size: 16px;
-  vertical-align: top;
-  margin: 0;
-}
-
-.details__link {
-  padding-top: 13px;
-}
-
-.details__comments {
-  font-size: 0;
-
-  p {
-    display: inline-block;
-    width: calc(100% - 120px);
-    padding-left: 4px;
-    margin-bottom: 0;
-
-    font-size: 16px;
-    word-wrap: break-word;
-    vertical-align: top;
-  }
-}
-
-
-
