@@ -7,7 +7,7 @@
   border-bottom: $base-border;
 
   &--main {
-    padding: 15px 0;
+    padding: 18px 0;
   }
 }
 
@@ -51,6 +51,9 @@
 }
 
 .user__avatar {
+  width: 34px;
+  height: 34px;
+
   border-radius: 50%;
   border: $base-border;
   margin-right: 10px;
