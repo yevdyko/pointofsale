@@ -1,0 +1,26 @@
+.pagination {
+  @include flex-container($spacing: center);
+
+  position: relative;
+
+  padding: 0 44px;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+
+  background: $white;
+  border: $base-border;
+  border-radius: 5px;
+
+  &.active {
+    background: $link-color;
+    border-color: $link-color;
+  }
+}

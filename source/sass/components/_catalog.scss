@@ -1,9 +1,8 @@
 .catalog {
-  display: flex;
+  @include flex-container();
+
   flex-wrap: wrap;
 
   height: 504px;
   padding: 0 25px;
-
-  border-top: 1px solid transparent;
 }

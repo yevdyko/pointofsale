@@ -14,7 +14,7 @@
 
   font-size: 20px;
   line-height: 24px;
-  color: #7d7d7d;
+  color: $dark-gray;
   cursor: pointer;
 
   background-color: $base-background-color;
@@ -25,8 +25,8 @@
   &:active {
     color: $white;
 
-    background-color: #7d7d7d;
-    border-color: #7d7d7d;
+    background-color: $dark-gray;
+    border-color: $dark-gray;
   }
 
   &--wide {
@@ -43,10 +43,6 @@
 
   &--action {
     text-transform: capitalize;
-  }
-
-  &--more {
-
   }
 
   &--grey {
@@ -151,8 +147,7 @@
 .btn-success {
   color: $white;
 
-  background: #16bb8e;
-  border-color: #3d987f;
+  background: $select-button-green;
 }
 
 .btn-disabled {
@@ -180,5 +175,6 @@
   &--next {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    border-left: 1px solid $color-outlinegrey;
   }
 }
