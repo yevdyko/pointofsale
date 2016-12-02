@@ -1,21 +1,31 @@
 .feedback-form {
+  width: 360px;
+  padding: 30px;
+  padding-top: 25px;
+  margin-left: 20px;
 
+  text-align: center;
+
+  background-color: $base-background-color;
+  border: $base-border;
+  border-radius: 0;
+
+  box-shadow: 0 0 3px $light-gray;
 }
 
 .feedback-form__title {
-  padding: 10px 0;
+  padding: 0;
   margin: 0;
+  margin-bottom: 15px;
 
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.feedback-form__button {
-  display: inline-block;
-  margin-right: 5px;
+.feedback-form__control {
+  @include flex-container();
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
+.feedback-form__button {
 }

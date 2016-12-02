@@ -9,6 +9,7 @@
 }
 
 .button {
+  display: block;
   min-width: 200px;
   padding: 21px;
 
@@ -30,8 +31,6 @@
   }
 
   &--wide {
-    display: block;
-    width: 240px;
     height: 70px;
     padding: 0;
     margin: 0 auto;
@@ -47,6 +46,31 @@
 
   &--grey {
     background-color: #f2f2f2;
+  }
+
+  &--guest {
+    min-width: 64px;
+    padding: 18px 22px;
+
+    font-size: 24px;
+    line-height: 1;
+
+    border-width: 2px;
+    border-radius: 8px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $dark-gray;
+      background-color: $base-background-color;
+      text-decoration: none;
+    }
+
+    &.active {
+      color: $white;
+      background-color: $blue;
+      border-color: $blue;
+    }
   }
 }
 
@@ -85,19 +109,6 @@
   }
 }
 
-.btn-xl {
-  padding: 20px 26px;
-  font-size: 24px;
-  line-height: 1;
-  border-radius: 6px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $base-background-color;
-  }
-}
-
 .btn-control {
   position: relative;
 
@@ -107,6 +118,10 @@
   font-size: 30px;
 
   border: 0;
+}
+
+.btn-primary {
+  background-color: $blue;
 }
 
 .btn--checkout {
@@ -142,6 +157,7 @@
 
   border: 0;
   border-radius: 4px;
+  background-color: $blue;
 }
 
 .btn-success {

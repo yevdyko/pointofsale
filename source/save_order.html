@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <title>Point of Sale</title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -23,50 +21,58 @@
     <div class="page-content">
       <div class="bill">
         <div class="bill__header">
-          <div class="bill__title">
-            <span>Гость:</span>
-            <span>Петя Сидоров</span>
-          </div>
-          <div class="bill__title">
-            <span>Тип заказа:</span>
-            <span>На месте</span>
-          </div>
-        </div>
-        <ul class="bill__list">
-          <li class="bill__item">
-            <span class="bill__title">Эспрессо</span>
-            <span class="bill__quantity">х 1</span>
-            <span class="bill__price">2,00</span>
-          </li>
-          <li class="bill__item">
-            <span class="bill__title">Американо</span>
-            <span class="bill__quantity">х 1</span>
-            <span class="bill__price">2,00</span>
-          </li>
-          <li class="bill__item">
-            <span class="bill__title">Лимонный пирог</span>
-            <span class="bill__quantity">х 1</span>
-            <span class="bill__price">4,00</span>
-          </li>
-          <li class="bill__item">
-            <span class="bill__title">Книга «Мои Полароиды»</span>
-            <span class="bill__quantity">х 1</span>
-            <span class="bill__price">20,00</span>
-          </li>
-        </ul>
-        <div class="bill__subtotal">
-          <div class="bill__item">
-            <span class="bill__title">Итого:</span>
-            <span class="bill__price">28,00</span>
-          </div>
-          <div class="bill__item">
-            <span class="bill__title">Баллы:</span>
-            <span class="bill__price">2</span>
+          <div class="bill__description">
+            <p class="bill__text">
+              <span class="bill__lable">Гость:</span>
+              <span>Петя Сидоров</span>
+            </p>
+            <p class="bill__text">
+              <span class="bill__lable">Тип заказа:</span>
+              <span>На месте</span>
+            </p>
           </div>
         </div>
-        <div class="bill__total">
-          <span class="bill__text">К оплате:</span>
-          <span class="bill__price bill__price--total">28,00</span>
+        <div class="bill__content">
+          <ul class="bill__list">
+            <li class="bill__item">
+              <span class="bill__title">Эспрессо</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">2,00</span>
+            </li>
+            <li class="bill__item">
+              <span class="bill__title">Американо</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">2,00</span>
+            </li>
+            <li class="bill__item">
+              <span class="bill__title">Лимонный пирог</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">4,00</span>
+            </li>
+            <li class="bill__item">
+              <span class="bill__title">Книга «Мои Полароиды»</span>
+              <span class="bill__quantity">х 1</span>
+              <span class="bill__price">20,00</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bill__footer">
+          <div class="bill__subtotal">
+            <p class="bill__text">
+              <span class="bill__title">Итого:</span>
+              <span class="bill__price bill__price--subtotal">28,00</span>
+            </p>
+            <p class="bill__text">
+              <span class="bill__title">Баллы:</span>
+              <span class="bill__price bill__price--subtotal">2</span>
+            </p>
+          </div>
+          <div class="bill__total">
+            <p class="bill__text bill__text--total">
+              <span class="bill__title bill__title--total">К оплате:</span>
+              <span class="bill__price bill__price--total">28,00</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>

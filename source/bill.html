@@ -9,25 +9,25 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
-        <div class="header__cancel">
+      <div class="header__inner">
+        <div class="header__toggle">
           <a class="header__link" href="#" onClick="history.go(-1)">Отмена</a>
         </div>
         <div class="header__text">
-          <h1>Счет</h1>
+          <h1 class="header__title">Счет</h1>
         </div>
       </div>
     </header>
     <div class="page-content">
       <div class="bill">
         <div class="bill__header">
-          <div class="bill__header-description">
-            <p>
-              <span>Гость:</span>
+          <div class="bill__description">
+            <p class="bill__text">
+              <span class="bill__lable">Гость:</span>
               <span>Петя Сидоров</span>
             </p>
-            <p>
-              <span>Тип заказа:</span>
+            <p class="bill__text">
+              <span class="bill__lable">Тип заказа:</span>
               <span>На месте</span>
             </p>
           </div>
@@ -58,43 +58,38 @@
         </div>
         <div class="bill__footer">
           <div class="bill__subtotal">
-            <p class="bill__item">
+            <p class="bill__text">
               <span class="bill__title">Итого:</span>
-              <span class="bill__price">28,00</span>
+              <span class="bill__price bill__price--subtotal">28,00</span>
             </p>
-            <p class="bill__item">
+            <p class="bill__text">
               <span class="bill__title">Баллы:</span>
-              <span class="bill__price">2</span>
+              <span class="bill__price bill__price--subtotal">2</span>
             </p>
           </div>
           <div class="bill__total">
-            <p class="bill__item">
-              <span class="bill__text">К оплате:</span>
+            <p class="bill__text bill__text--total">
+              <span class="bill__title bill__title--total">К оплате:</span>
               <span class="bill__price bill__price--total">28,00</span>
             </p>
           </div>
         </div>
       </div>
-      <div class="guest-ammount">
-        <div class="guest">
-          <h1 class="feedback-form__title">Введите количество гостей:</h1>
-          <form class="feedback-form" action="#" method="POST">
-            <div class="feedback-form__button">
-              <button class="btn btn-xl btn-default">1</button>
-            </div>
-            <div class="feedback-form__button">
-              <button class="btn btn-xl btn-default">2</button>
-            </div>
-            <div class="feedback-form__button">
-              <button class="btn btn-xl btn-default">3</button>
-            </div>
-            <div class="feedback-form__button">
-              <button class="btn btn-xl btn-default">4</button>
-            </div>
-            <div class="feedback-form__button">
-              <button class="btn btn-xl btn-default">5</button>
-            </div>
-          </form>
+      <div class="feedback-form">
+        <h1 class="feedback-form__title">Введите количество гостей:</h1>
+        <div class="feedback-form__control">
+          <div class="feedback-form__button">
+            <a class="button button--guest">1</a>
+          </div>
+          <div class="feedback-form__button">
+            <a class="button button--guest active">2</a>
+          </div>
+          <div class="feedback-form__button">
+            <a class="button button--guest">3</a>
+          </div>
+          <div class="feedback-form__button">
+            <a class="button button--guest">4</a>
+          </div>
         </div>
       </div>
     </div>

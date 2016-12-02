@@ -19,7 +19,7 @@ body {
 }
 
 .page-content {
-  @include flex-container($spacing: center);
+  @include flex-container($spacing: center, $alignment: flex-start);
 
   padding-top: 25px;
 }
