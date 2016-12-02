@@ -1,13 +1,9 @@
 .comment-form {
-  @include flex-container();
-
-  flex-wrap: wrap;
 }
 
 .comment-form__field {
   position: relative;
 
-  flex-basis: 100%;
   margin-bottom: 20px;
 }
 
@@ -34,6 +30,6 @@
 
   &:hover,
   &:focus {
-    border-color: $link-color--action;
+    border-color: $link-color;
   }
 }

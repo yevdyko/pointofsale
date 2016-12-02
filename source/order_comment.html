@@ -49,16 +49,18 @@
           </li>
         </ul>
       </section>
-      <form class="comment-form" action="#" method="POST">
-        <fieldset class="comment-form__field">
-          <legend class="comment-form__label">Добавить теги:</legend>
-          <textarea class="comment-form__textarea" name="tags"></textarea>
-        </fieldset>
-        <fieldset class="comment-form__field">
-          <legend class="comment-form__label">Добавить комментарий:</legend>
-          <textarea class="comment-form__textarea" name="comment"></textarea>
-        </fieldset>
-      </form>
+      <div class="comment-form">
+        <form action="#" method="POST">
+          <fieldset class="comment-form__field">
+            <label for="tags" class="comment-form__label">Добавить теги:</label>
+            <textarea class="comment-form__textarea" name="tags"></textarea>
+          </fieldset>
+          <fieldset class="comment-form__field">
+            <label for="comment" class="comment-form__label">Добавить комментарий:</label>
+            <textarea class="comment-form__textarea" name="comment"></textarea>
+          </fieldset>
+        </form>
+      </div>
     </div>
     <div class="button-wrapper">
       <button class="button button--wide button--grey" type="submit">Готово</button>
