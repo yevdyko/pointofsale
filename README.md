@@ -1,11 +1,22 @@
 # Point of Sale
 
-Interface for a point of sale system adapted for use with iPad.
+User Interface for a Point of Sale System adapted for use with iPad.
+
+## Technologies used
+
+- HTML5, CSS3
+- Preprocessor SASS
+- Task automation with Gulp
+
+## Tools used
+
+- Balsamiq for creating mockups
+- Trello for project management
 
 ## Requirements
 
 - Bootstrap 3.3.7
-- jQuery 3.1.0 
+- jQuery 3.1.0
 
 ## Prerequisites
 
@@ -49,6 +60,6 @@ Run the optimized project from the build folder with:
 
 So now in your browser just go to [http://localhost:9000](http://localhost:9000)
 
-Deploy the optimized project using the command: 
+Deploy the optimized project using the command:
 
     $ npm run deploy
