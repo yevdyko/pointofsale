@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper wrapper--white">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__toggle">
+          <a class="header__link" href="#" onClick="history.go(-1)">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1 class="header__title">Редактировать профиль</h1>
+        </div>
+      </div>
+    </header>
+    <div class="registration-form">
+      <form action="/echo" method="post">
+        <div class="registration-form__container">
+          <div class="registration-form__group">
+            <div class="registration-form__image">
+              <img src="img/george.png" width="152" height="152" alt="avatar">
+            </div>
+          </div>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="name">Имя *</label>
+            <input class="registration-form__field" type="text" id="name" value="Петя"required>
+            <button class="registration-form__button" type="reset"></button>
+          </div>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="surname">Фамилия *</label>
+            <input class="registration-form__field" type="text" id="surname" value="Сидоров"required>
+            <button class="registration-form__button" type="reset"></button>
+          </div>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="phone">Телефон</label>
+            <input class="registration-form__field" type="tel" id="phone" placeholder="+375" value="+375 29 123-45-67">
+            <button class="registration-form__button" type="reset"></button>
+          </div>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="email">Электронная почта</label>
+            <input class="registration-form__field" type="email" id="email" value="sidorov@example.com">
+            <button class="registration-form__button" type="reset"></button>
+          </div>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="facebook">Фейсбук</label>
+            <input class="registration-form__field" type="text" id="facebook" value="sidorov">
+            <button class="registration-form__button" type="reset"></button>
+          </div>
+          <div class="registration-form__group">
+            <label class="registration-form__label" for="instagram">Инстаграм</label>
+            <input class="registration-form__field" type="text" id="instagram" value="sidorov">
+            <button class="registration-form__button" type="reset"></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="button-wrapper">
+      <button class="button button--wide button--grey" type="submit">Готово</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

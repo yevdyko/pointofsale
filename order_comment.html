@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper wrapper--white">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__toggle">
+          <a class="header__link" href="#" onClick="history.go(-1)">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1 class="header__title">Комментарий к заказу</h1>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper content-wrapper--comment">
+      <section class="details">
+        <ul class="details__list">
+          <li class="details__item">
+            <strong>Номер заказа:</strong>
+            <span>012900150328</span>
+          </li>
+          <li class="details__item">
+            <strong>Гость:</strong>
+            <span>Случайный</span>
+          </li>
+          <li class="details__item">
+            <strong>Тип заказа:</strong>
+            <span>С собой</span>
+          </li>
+          <li class="details__item">
+            <strong>Статус:</strong>
+            <span>Оплачен</span>
+          </li>
+          <li class="details__item">
+            <strong>Итого:</strong>
+            <span>15,00 руб.</span>
+          </li>
+          <li class="details__item">
+            <strong>Дата заказа:</strong>
+            <span>10/16/2016 20:34:21</span>
+          </li>
+        </ul>
+      </section>
+      <div class="comment-form">
+        <form action="#" method="POST">
+          <fieldset class="comment-form__field">
+            <label for="tags" class="comment-form__label">Добавить теги:</label>
+            <textarea class="comment-form__textarea" name="tags"></textarea>
+          </fieldset>
+          <fieldset class="comment-form__field">
+            <label for="comment" class="comment-form__label">Добавить комментарий:</label>
+            <textarea class="comment-form__textarea" name="comment"></textarea>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="button-wrapper">
+      <button class="button button--wide button--grey" type="submit">Готово</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

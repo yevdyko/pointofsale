@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Point of Sale</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper wrapper--white">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__toggle">
+          <a class="header__link" href="#" onClick="history.go(-1)">Отмена</a>
+        </div>
+        <div class="header__text">
+          <h1 class="header__title">Заказы</h1>
+        </div>
+      </div>
+    </header>
+    <div class="table-wrapper">
+      <section class="filter">
+        <div class="filter__item">
+          <h4 class="filter__title">Тип:</h4>
+          <div class="filter__type">
+            <select name="type">
+              <option value="1">Все</option>
+              <option value="2">С собой</option>
+              <option value="3">На месте</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__item">
+          <h4 class="filter__title">Статус:</h4>
+          <div class="filter__type">
+            <select name="status">
+              <option value="1">Все</option>
+              <option value="2">Оплачен</option>
+              <option value="3">Не оплачен</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__item">
+          <h4 class="filter__title">Теги:</h4>
+          <div class="filter__type">
+            <select name="comments">
+              <option value="1">Все</option>
+              <option value="2">Добавлены</option>
+              <option value="3">Не добавлены</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__item">
+          <h4 class="filter__title">Комментарий:</h4>
+          <div class="filter__type">
+            <select name="comments">
+              <option value="1">Все</option>
+              <option value="2">Добавлен</option>
+              <option value="3">Не добавлен</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <span>
+                Номер заказа
+              </span>
+            </th>
+            <th>
+              <span>
+                Тип
+              </span>
+            </th>
+            <th>
+              <span>
+                Статус
+              </span>
+            </th>
+            <th>
+              <span>
+                Итого
+              </span>
+            </th>
+            <th>
+              <span>
+                Дата заказа
+              </span>
+            </th>
+            <th>
+              <span>
+                Теги
+              </span>
+            </th>
+            <th>
+              <span>
+                Комментарий
+              </span>
+            </th>
+            <th>
+              <span>
+                Бариста
+              </span>
+            </th>
+            <th>
+              <span>
+                Гость
+              </span>
+            </th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>012900150328</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>10,00 руб.</td>
+            <td>10/16/2016 20:34:21</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>Влад</td>
+            <td>Случайный</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012870175655</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>2,00 руб.</td>
+            <td>10/14/2016 10:38:07</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>Влад</td>
+            <td>Случайный</td>
+            <td>
+              <a href="#" class="open-order"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012850132615</td>
+            <td>На месте</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>5,50 руб.</td>
+            <td>10/14/2016 08:13:43</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>Влад</td>
+            <td>Случайный</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012900150328</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>4,00 руб.</td>
+            <td>10/16/2016 20:34:21</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>Влад</td>
+            <td>Случайный</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012870175655</td>
+            <td>На месте</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>10,00 руб.</td>
+            <td>10/14/2016 10:38:07</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>Влад</td>
+            <td>Ваня Крутик</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012850132615</td>
+            <td>На месте</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>12,50 руб.</td>
+            <td>10/14/2016 08:13:43</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>Влад</td>
+            <td>Случайный</td>
+            <td>
+              <a href="#" class="open-order"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012900150328</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>2,50 руб.</td>
+            <td>10/16/2016 20:34:21</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>Александр</td>
+            <td>Слава Пушкинский</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012870175655</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>2,00 руб.</td>
+            <td>10/14/2016 10:38:07</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>Влад</td>
+            <td>Случайный</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>012850132615</td>
+            <td>С собой</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>2,00 руб.</td>
+            <td>10/14/2016 08:13:43</td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-not-added" aria-hidden="true"></span>
+            </td>
+            <td>
+              <span class="fa fa-check-circle fa-xl status-added" aria-hidden="true"></span>
+            </td>
+            <td>Алексей</td>
+            <td>Петя Сидоров</td>
+            <td>
+              <a href="#"></a>
+            </td>
+            <td>
+              <a href="order_details.html">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="button-wrapper">
+      <button class="button button--grey" type="submit">Показать больше</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
