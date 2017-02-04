@@ -1,11 +1,14 @@
 .users {
-  @include flex-container($alignment: center);
+  @include flex-container($alignment: flex-start);
 
+  width: 775px;
   height: calc(100% - 72px);
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
 .user__list {
-  @include flex-container($spacing: center);
+  @include flex-container($spacing: flex-start);
 
   flex-wrap: wrap;
 }
